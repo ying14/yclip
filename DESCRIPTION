@@ -15,3 +15,5 @@ Imports:
     rlang
 LinkingTo: 
     Rcpp
+URL: https://github.com/ying14/yclip
+BugReports: https://github.com/ying14/yclip/issues
