@@ -44,8 +44,46 @@ clipboard_read_raw <- function(format_name) {
 #'
 #' @examples
 clipboard_read_text <- function(format_name) {
+
+  if (.Platform$OS.type != "windows") {
+    stop("clipboard_read_text() is currently only implemented on Windows.")
+  }
+
+  if (format_name == "CF_UNICODETEXT") {
+    return(clipboard_read_unicode_text_windows())
+  }
+
   x <- clipboard_read_raw(format_name)
   rawToChar(x)
+}
+
+
+
+#' Read DIB Image Data from Clipboard
+#'
+#' @return A raw vector containing Windows DIB data.
+#' @export
+clipboard_read_dib <- function() {
+
+  if (.Platform$OS.type != "windows") {
+    stop("clipboard_read_dib() is currently only implemented on Windows.")
+  }
+
+  clipboard_read_dib_windows()
+}
+
+
+#' Inspect DIB Image on Clipboard
+#'
+#' @return A list containing DIB image metadata.
+#' @export
+clipboard_inspect_dib <- function() {
+
+  if (.Platform$OS.type != "windows") {
+    stop("clipboard_inspect_dib() is currently only implemented on Windows.")
+  }
+
+  clipboard_inspect_dib_windows()
 }
 
 

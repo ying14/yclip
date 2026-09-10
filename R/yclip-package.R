@@ -9,7 +9,6 @@
 
 
 # add package dependencies to imports of DESCRIPTION
-usethis::use_package("rlang")
 
 
 
