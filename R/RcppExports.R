@@ -25,3 +25,11 @@ clipboard_inspect_dib_windows <- function() {
     .Call(`_yclip_clipboard_inspect_dib_windows`)
 }
 
+clipboard_write_raw_windows <- function(data, format_name) {
+    invisible(.Call(`_yclip_clipboard_write_raw_windows`, data, format_name))
+}
+
+clipboard_write_formats_windows <- function(data) {
+    invisible(.Call(`_yclip_clipboard_write_formats_windows`, data))
+}
+

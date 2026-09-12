@@ -61,6 +61,27 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// clipboard_write_raw_windows
+void clipboard_write_raw_windows(Rcpp::RawVector data, std::string format_name);
+RcppExport SEXP _yclip_clipboard_write_raw_windows(SEXP dataSEXP, SEXP format_nameSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::RawVector >::type data(dataSEXP);
+    Rcpp::traits::input_parameter< std::string >::type format_name(format_nameSEXP);
+    clipboard_write_raw_windows(data, format_name);
+    return R_NilValue;
+END_RCPP
+}
+// clipboard_write_formats_windows
+void clipboard_write_formats_windows(Rcpp::List data);
+RcppExport SEXP _yclip_clipboard_write_formats_windows(SEXP dataSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::List >::type data(dataSEXP);
+    clipboard_write_formats_windows(data);
+    return R_NilValue;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_yclip_clipboard_inspect_windows", (DL_FUNC) &_yclip_clipboard_inspect_windows, 0},
@@ -68,6 +89,8 @@ static const R_CallMethodDef CallEntries[] = {
     {"_yclip_clipboard_read_unicode_text_windows", (DL_FUNC) &_yclip_clipboard_read_unicode_text_windows, 0},
     {"_yclip_clipboard_read_dib_windows", (DL_FUNC) &_yclip_clipboard_read_dib_windows, 0},
     {"_yclip_clipboard_inspect_dib_windows", (DL_FUNC) &_yclip_clipboard_inspect_dib_windows, 0},
+    {"_yclip_clipboard_write_raw_windows", (DL_FUNC) &_yclip_clipboard_write_raw_windows, 2},
+    {"_yclip_clipboard_write_formats_windows", (DL_FUNC) &_yclip_clipboard_write_formats_windows, 1},
     {NULL, NULL, 0}
 };
 

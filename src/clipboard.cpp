@@ -304,7 +304,6 @@ Rcpp::RawVector clipboard_read_dib_windows() {
 }
 
 
-
 // [[Rcpp::export]]
 Rcpp::List clipboard_inspect_dib_windows() {
 
@@ -343,4 +342,272 @@ Rcpp::List clipboard_inspect_dib_windows() {
   CloseClipboard();
 
   return result;
+}
+
+
+
+// [[Rcpp::export]]
+void clipboard_write_raw_windows(
+    Rcpp::RawVector data,
+    std::string format_name
+) {
+
+  if (!OpenClipboard(NULL)) {
+    Rcpp::stop("Could not open clipboard.");
+  }
+
+  UINT format = get_clipboard_format_id(format_name);
+
+  if (format == 0) {
+    CloseClipboard();
+    Rcpp::stop("Could not find clipboard format: %s", format_name);
+  }
+
+  HGLOBAL hData = GlobalAlloc(
+    GMEM_MOVEABLE,
+    data.size()
+  );
+
+  if (hData == NULL) {
+    CloseClipboard();
+    Rcpp::stop("Could not allocate clipboard memory.");
+  }
+
+  void* ptr = GlobalLock(hData);
+
+  if (ptr == NULL) {
+    GlobalFree(hData);
+    CloseClipboard();
+    Rcpp::stop("Could not lock clipboard memory.");
+  }
+
+  std::memcpy(
+    ptr,
+    data.begin(),
+    data.size()
+  );
+
+  GlobalUnlock(hData);
+
+  if (!EmptyClipboard()) {
+    GlobalFree(hData);
+    CloseClipboard();
+    Rcpp::stop("Could not empty clipboard.");
+  }
+
+  if (SetClipboardData(format, hData) == NULL) {
+    GlobalFree(hData);
+    CloseClipboard();
+    Rcpp::stop("Could not set clipboard data.");
+  }
+
+  // Windows now owns hData.
+  CloseClipboard();
+}
+
+
+
+// [[Rcpp::export]]
+void clipboard_write_formats_windows(Rcpp::List data) {
+
+  // ------------------------------------------------------------
+  // Validate input
+  // ------------------------------------------------------------
+
+  Rcpp::CharacterVector names = data.names();
+
+  if (names.size() != data.size()) {
+    Rcpp::stop(
+      "Clipboard formats must be supplied as a named list."
+    );
+  }
+
+  if (data.size() == 0) {
+    Rcpp::stop(
+      "At least one clipboard format must be supplied."
+    );
+  }
+
+  // Resolve format IDs and validate data before modifying clipboard.
+  std::vector<UINT> formats(data.size());
+
+  for (R_xlen_t i = 0; i < data.size(); ++i) {
+
+    std::string format_name =
+      Rcpp::as<std::string>(names[i]);
+
+    if (format_name.empty()) {
+      Rcpp::stop(
+        "Clipboard format names cannot be empty."
+      );
+    }
+
+    if (!Rcpp::is<Rcpp::RawVector>(data[i])) {
+      Rcpp::stop(
+        "Data for clipboard format '%s' must be a raw vector.",
+        format_name
+      );
+    }
+
+    Rcpp::RawVector bytes(data[i]);
+
+
+    if (bytes.size() == 0) {
+      Rcpp::stop(
+        "Clipboard format '%s' contains zero bytes.",
+        format_name
+      );
+    }
+
+    UINT format = get_clipboard_format_id(format_name);
+
+    if (format == 0) {
+      Rcpp::stop(
+        "Could not find clipboard format: %s",
+        format_name
+      );
+    }
+
+    formats[i] = format;
+  }
+
+
+  // ------------------------------------------------------------
+  // Allocate all clipboard memory before opening/emptying
+  // clipboard.
+  // ------------------------------------------------------------
+
+  std::vector<HGLOBAL> handles(
+      data.size(),
+      NULL
+  );
+
+  for (R_xlen_t i = 0; i < data.size(); ++i) {
+
+    Rcpp::RawVector bytes(data[i]);
+
+    HGLOBAL hData = GlobalAlloc(
+      GMEM_MOVEABLE,
+      bytes.size()
+    );
+
+    if (hData == NULL) {
+
+      for (R_xlen_t j = 0; j < i; ++j) {
+        if (handles[j] != NULL) {
+          GlobalFree(handles[j]);
+        }
+      }
+
+      Rcpp::stop(
+        "Could not allocate clipboard memory."
+      );
+    }
+
+    void* ptr = GlobalLock(hData);
+
+    if (ptr == NULL) {
+
+      GlobalFree(hData);
+
+      for (R_xlen_t j = 0; j < i; ++j) {
+        if (handles[j] != NULL) {
+          GlobalFree(handles[j]);
+        }
+      }
+
+      Rcpp::stop(
+        "Could not lock clipboard memory."
+      );
+    }
+
+    std::memcpy(
+      ptr,
+      bytes.begin(),
+      bytes.size()
+    );
+
+    GlobalUnlock(hData);
+
+    handles[i] = hData;
+  }
+
+
+  // ------------------------------------------------------------
+  // Open clipboard
+  // ------------------------------------------------------------
+
+  if (!OpenClipboard(NULL)) {
+
+    for (HGLOBAL hData : handles) {
+      if (hData != NULL) {
+        GlobalFree(hData);
+      }
+    }
+
+    Rcpp::stop(
+      "Could not open clipboard."
+    );
+  }
+
+
+  // ------------------------------------------------------------
+  // Empty existing clipboard
+  // ------------------------------------------------------------
+
+  if (!EmptyClipboard()) {
+
+    CloseClipboard();
+
+    for (HGLOBAL hData : handles) {
+      if (hData != NULL) {
+        GlobalFree(hData);
+      }
+    }
+
+    Rcpp::stop(
+      "Could not empty clipboard."
+    );
+  }
+
+
+  // ------------------------------------------------------------
+  // Set each clipboard format.
+  //
+  // IMPORTANT:
+  // Successful SetClipboardData() transfers ownership of
+  // the HGLOBAL to Windows.
+  // ------------------------------------------------------------
+
+  for (R_xlen_t i = 0; i < data.size(); ++i) {
+
+    if (SetClipboardData(
+        formats[i],
+               handles[i]
+    ) == NULL) {
+
+      std::string format_name =
+        Rcpp::as<std::string>(names[i]);
+
+      // This particular handle was not transferred.
+      GlobalFree(handles[i]);
+
+      CloseClipboard();
+
+      Rcpp::stop(
+        "Could not set clipboard format: %s",
+        format_name
+      );
+    }
+
+    // Windows now owns this handle.
+    handles[i] = NULL;
+  }
+
+
+  // ------------------------------------------------------------
+  // Done
+  // ------------------------------------------------------------
+
+  CloseClipboard();
 }

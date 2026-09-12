@@ -1,0 +1,2128 @@
+Version:1.0
+StartHTML:0000000166
+EndHTML:0000129342
+StartFragment:0000034932
+EndFragment:0000129302
+SourceURL:file:///C:/Users/TaurY/Documents/R/yclip/asdf.rtf
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List
+href="file:///C:/Users/TaurY/AppData/Local/Temp/msohtmlclip1/01/clip_filelist.xml">
+<link rel=Edit-Time-Data
+href="file:///C:/Users/TaurY/AppData/Local/Temp/msohtmlclip1/01/clip_editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData
+href="file:///C:/Users/TaurY/AppData/Local/Temp/msohtmlclip1/01/clip_themedata.thmx">
+<link rel=colorSchemeMapping
+href="file:///C:/Users/TaurY/AppData/Local/Temp/msohtmlclip1/01/clip_colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Aptos;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 3 0 0 415 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:ZH-CN;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-ligatures:none;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-font-kerning:1.0pt;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in;word-wrap:break-word'>
+<!--StartFragment-->
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+color:black;mso-font-kerning:0pt'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:116.25pt;
+ height:117.75pt'>
+ <v:imagedata src="file:///C:/Users/TaurY/AppData/Local/Temp/msohtmlclip1/01/clip_image001.jpg"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=155 height=157
+src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCACdAJsDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2aiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACimSSpEhaRgqjuark3Nz/qz9nj/vEZc/h2oAsSzRwruldUX1Y4qmdWib/j3inuPeKM4/M4FSx6dbRyeY0Ykl/wCeknzN+vT8Ks0gKBvb4/6vTHx23zIP8aj+3arn/kEL/wCBS/4Vo719RShgaV0BlPrc1tzfaXdQp3dMSgf9881as9Xsb7/j3uo3buucMPqOtXMiqd5pVjf/APHzbRu39/GGH0Yc0wLlLWJ9i1HTedPuftUI/wCWFw3zD6P/AI/nVvT9XhvmaIq0Nwn34ZBhhRcDQooopgFFFFABRRRQAUUUUAFRyyiMDgsx6KO9OZgiknoKZGuT5jfeP6D0pNgJHCSwkmO5+w7L9KlqA3kQnMJbDjnB71IJAe9K4DzUUsgRSelPLDFYXim+mtNFna2sJr92Gw28LbXZTwxB9h6UnqM4nxFqPiCPWJdU0i/kWywFQqBc2rAf3gvzIfU4P1qXTPio1uFHiHT2t4zwL20bzoD9SOR9K4uz0+yS8aTwhr9zo+og/Np+okxnPpu6H8RVm51y80y5H/CY6BLbyNx/aWn/ALtm+uPkf6GnYR7PpeuWWsW4m0+7huYj/FG4OPr6VeMlcV4A0XTLe2k1jTmSVb0AJMIPJYoD0Zemc9wBmt7VLq9CeXp8KvKTjc5wq+5/+tSsFyt4h1I6LaTX73nlIgztbGD7c1Dp983iLRra/vLSWDeu+KZOJEHrjrg+nNVp7bRob+KfWryG4vIxlRK3Ce4T/GuktZ4b613WkqsjDCunIFPoBFYajJHIlteur7h+6nX7sg/ofatas220SCHSVsXeSVR8xkc/OW67s9jmn6dPJG72dy2ZY+jH+NexpoDQooopgFFFFABRRSE4BNAEeRI/qq/zqnf6itohCASS/wAMQYBj+dXlGFxXOa6Bb38LfZzP5+Y2UgYwPfsahasCR76z1Fhb3IaG46hHO1h7qe/4VX0TUL+e6uIpkV7aGRoxKzYkBHTI759altNFR94uN8tq4DRxTctE3fB6iknjsfC+nXt7JJceTjfISTIygcDHenoGpVuPGMVlq89pewyQpuVLV8c3LZAZVHqCR9Rk9q5Dxt4ueHXHSTSPt+mWnym5tpissEn8WGU/L2GDjpVnwTZm4B1W1urVwgeMxszbpJTyvmHJXcP7yjJzUer6Ho8121xqVpd+G9RY/wDH7bPmFyfVh8vP+0FNGgXZmw6ro3iyNYWubTUyRhbbVAILlfZJl4b8at2Wj3+n3sdjpGpXNqsrYOl6xF5sTr3COMqeM8CsbWfAGoeV9oks7fWbc8i704iKfHqV+6/5Z966b4VWV7Fb3c8mpXlxYRny4ra5iKvE45OQc9BgcHHNAHW6tqUXhrSoltbeH5cJHCGCDaOuPp6CtK1ka8sYp3j8ppEDbM5xn3rlbmEeKddt3ingezgb54jjzUI5OVPIyeMdv1rtVIUdKQzi7nSrx9UmtLBoIhgST3Dw7m+boAT16VtaRqcBuBY2aNMIRiSZE2xqfTPc/StVZoblD5bo6nIyrZ+tYZt7vT7yGx0+ZEhYNJ88WdoyM8/jVXuTax1IqnqVuzRrcQj9/B8w9x3FQ/21YQZSa9tw68MDIBg/Srdve292MwTRycZ+VgaSGSW8y3ECSr0YZqWs+wH2e5ntc/Kp3p9DWhTQBRRRTAKa/Qe5p1McZK/Wk9gAnArntQ1TTNQtZYpJiIw5jMgUgI4PZsYyDXQt0NYM+oXLXVzDDZxyxQ4Drvw7AjOQMYxUoZJod99tsSTIsjROYmdejEd65jxhrAGsQ2yXN3bGyXzZZIo0kRd4wC6E5ZcZzgcZrrtNsI7SN/ITy4pDvWMDG3PXiuc1HQbr+2hJNbW+oWKyNcq86B5oSASYlz1BbGD25FHURheJru2020tdN1lpot6iWXUIbINbSydBvHXOMcggj1qKxv8AWNPt/N0+5j1PTSMExE3UQHuM+an/AI+KfD41WS9lt5btrOaRju07Wodq89lkA4H1Bpl5oei/aVu1W88MXrfdurVs20n/AAJfl/PbTAn02+0u8ud1p9o0S7ZgPNs28y2dj2ZcYB9mVTXX6xfto3h+Sa4kDzBNpdV2hmPfA6dzWL4e0TVP7WS51o6ZqEcabrfUrcbJmPQBgOCMZ9RTfE066prNvpsbSLJHIqqytjk9SDnIwB6H8KQEfhx4LHw/d6lJcKrzfulMkwGMdMNzgnOe/QVJDqF/pWlXs97dymBUCQidQrbiOGDgkEAd89fSodf1QwajDYWkMMsMCBHE0QeMsccnHQ9Bz3o1Kxa5lsdOs4JLWKKQJ+6VvLVzy+0njA5GCPWgBdDEGm6adcuA010xMcKlgGf2yepOCcnGOa6vRtQi8QacZGgkiP3Xjcd/Y9GHuK5vUp9Mu2FnDMIorbCkGDzIJGbA+cDoRjGT6112iaaulabHbgLuGS5TOCx6kZ5oGLDomn2+THZwgnkkoCTVmOzt4ZTLHBEkhG0uqAHHpmp6KqwilcDy9RtpB/GCh/mP61dqpfgnyCv3hKMfkatChALSUtFMApj9V+tPpr9M+hpPYBsmdhx1xXIaZZXV/eyamb2SC8EhjltztdEAP3BgA475PPNdj1FYc3hwSanPcJdSRwXGGlhQ7dzjjOe3GPyqVoBrKw24rj/Hsc+qaYdLsZ5FuHIkcW8qiYKDwQpI3DI7EdK3dPt7mxjnS5lZ4Vc+U0jZbb7mvLdV8U+E/EesPH4gsb3Sr+JikV4pZHCgnaSRyPxBoSAzJL/xBbKbHVrW38R2qDmC4jK3KD2BAcfUZHvS6LquniQx+HdcuNDmJw2namPMt2PoGPT8a6N9L1xrNZLK7sPFmljlEuCFnX/dkHf8c03RdJ0rxNrqR3VleQXVpiWW01CAs6gHgrNwSM44bPFMR2mmoNB8Nma5trW3uCvmzR2oxGZD/dHvxXP6AiLBf67dqGEZPlg/Mu/u2OSDkgZHbNa/iS5gubuHTXMuzhpPK2sck4UFD1656ehqTUdI1Cz0m3t9KUXCxcyAymN2IxypB47nHNIZj+H4IdUvXv8A7ERdwAyebBPlJmPZgeMnr796s6Zq+q20uoG/ffBbITtliKNvP3Vznofx+tRXsVxpmnWqRolvJMTNL5wEZLdl8xNq7hz6Z9+aTUtTeOztbC4t2vJpQsk0UknzqG+6FZRzjnsc0AXfBtgl5dz6nNEVkbja5BwxOWIx2yBjIz1rtRgVnaHaxWulW6xW7wDyx8khy698MfUZqyqi4lkDE4Q42g0r6gWQc0VF5flEbM7SeRnNSjpVpgV7n5pYFx/Hn8hVmoPv3Y9I1/U1PQgCiiimAUh5FLRQAxTkYPUcU7FMY7WB7HrT6ldgMvxDp13qejXFrYXMdtPKu0SSR71x3BXuCOPxryHWdC1XS4zHrmjl7Rf+W9qv2m3A9fLJ3x/8BYfSvc6QjNO1gPnGy0vypGvPDGpzWjryTbyNLH/wJQPMT/gSsPevZ/BX9q3PhyCfXJIZbt8kPEBhk/hOR69ak1nwDoOtTi5mtPs92pyLi1bypM/UdfxroY41jjVFHCjApNXBHKab4fv/APhKZ7/UkhaJctC6tk56DHcYGevrXV7eMU6lo5QOQ/sPVJNbY3uyS0kfc8kL7QQOish4boB0/GodH0O/XxXLc6pAdpJkjZcPHu6AAnlcDtxXa0lOwABgVmXkN/bXTXGnJFMHHzwyPt59Qa1KKLAVLM3koL3qRRHtHG27H1NWiQqknoKKikPmOIx9W+lJ6AJbEOhkU53nOfap6aqhFCqAAOgFOppWAKKKKYBRRRQAhAYEHoaiVzGwR847N61NTXUOpVhkGk1cBaWq7F4OSC6evcVKkiuMqQaL9wH0UUUwCiiigAooooAKKSmGTJ2ryf5UmwCWQoAFGWPQUscflr1yTyT60KuMnqT3p9CXUAooopgFFFFABRRRQAUUUUAFQvbjO6M7W9un5VNRRa4EHmyR/wCsQkf3l5FPWZH6MPpUlMaNH+8oJ9cUrMB24etGRURtk7Fl+hoFsuMb3P40veAe0qL1YCozcAnCAsfYU9YI1/gBPqeTT8U7MCLY8n3ztHov+NSKioMKMU6iiwBRRRTAKKKKACiiigAopKKAFooooAKKKKACikpaACiiigAooooAKKKKACiiigAooooAKSlooA//2Q=="
+v:shapes="_x0000_i1025"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+color:#636363;mso-font-kerning:0pt'>INFECTIOUS DISEASE CONSULT SERVICE<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+color:black;mso-font-kerning:0pt'>INITIAL INPATIENT CONSULTATION<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><b><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;color:black;mso-font-kerning:0pt'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><b><u><span
+style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;color:black;
+mso-font-kerning:0pt'>Inpatient consult to Infectious Diseases<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>Consult
+performed by: Peter A Mead, MD<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>Consult ordered
+by: Bryan Baracaldo, NP<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>Reason for
+consult: Dr. Ping Chi, MD requests our advice and opinion regarding this
+patient with polymicrobial bacteremia in setting of ureteral obstruction s/p
+stent placement<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>Assessment/Recommendations:
+Please see Assessment section below<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><b><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;color:#002266;mso-font-kerning:0pt'>Preferred
+Language:<span style='mso-spacerun:yes'>  </span></span></b><span
+style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+0pt'>English<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><b><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;color:#003F66;mso-font-kerning:0pt'>Subjective<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><b><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;color:#7030A0;mso-font-kerning:0pt'>History
+Of Present Illness<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>Lorraine M
+Riozzi is a 57 y.o. female with history of common bile duct adenocarcinoma
+diagnosed after developing jaundice, found to have dilated CBD -&gt; ERCP (with
+stenting) and biopsy ( pathology concerning for malignancy ) s/p
+pancreaticoduodenectomy 9/18/24 (Dr. Jarnagin) complicated by positive margin
+at right hepatic duct, also complicated by bile leak.<span
+style='mso-spacerun:yes'>  </span>Received adjuvant capecitabine.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>&nbsp;<span
+style='color:#002266'>&nbsp;<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><b><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;color:#002266;mso-font-kerning:0pt'>Family
+History<o:p></o:p></span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=792 style='width:8.25in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+  none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  11.0pt;font-family:"Segoe UI",sans-serif;color:#5F5F73;mso-font-kerning:0pt'>Family
+  History<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=792 style='width:8.25in;padding:0in 0in 0in 0in'>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:
+   0in 0in 0in 0in'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td width=22 valign=top style='width:16.5pt;background:#FEFEFE;padding:
+    0in 3.75pt 0in 1.5pt'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+    none;mso-layout-grid-align:none;text-autospace:none'><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;color:black;
+    mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td width=266 valign=top style='width:199.5pt;background:#FEFEFE;
+    padding:0in 3.75pt 0in 1.5pt'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+    none;mso-layout-grid-align:none;text-autospace:none'><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;color:black;
+    mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td width=180 valign=top style='width:135.0pt;background:#FEFEFE;
+    padding:0in 3.75pt 0in 1.5pt'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+    none;mso-layout-grid-align:none;text-autospace:none'><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;color:black;
+    mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td width=216 valign=top style='width:2.25in;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+    none;mso-layout-grid-align:none;text-autospace:none'><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;color:black;
+    mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td width=684 colspan=4 valign=top style='width:513.0pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:
+    "Segoe UI",sans-serif;color:#666666;mso-font-kerning:0pt'>Family History<o:p></o:p></span></b></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td width=288 colspan=2 valign=top style='width:3.0in;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:#666666;mso-font-kerning:0pt'>Problem<o:p></o:p></span></p>
+    </td>
+    <td width=180 valign=top style='width:135.0pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:#666666;mso-font-kerning:0pt'>Relation<o:p></o:p></span></p>
+    </td>
+    <td width=216 valign=top style='width:2.25in;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:#666666;mso-font-kerning:0pt'>Age of Onset<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td width=22 valign=top style='width:16.5pt;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+    line-height:normal;mso-pagination:none;mso-layout-grid-align:none;
+    text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>•</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=266 valign=top style='width:199.5pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>Lung cancer</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=180 valign=top style='width:135.0pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>Mother</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=216 valign=top style='width:2.25in;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>62</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td width=22 valign=top style='width:16.5pt;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+    line-height:normal;mso-pagination:none;mso-layout-grid-align:none;
+    text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>•</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=266 valign=top style='width:199.5pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>COPD</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=180 valign=top style='width:135.0pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>Father</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=216 valign=top style='width:2.25in;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+    none;mso-layout-grid-align:none;text-autospace:none'><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;color:black;
+    mso-color-alt:windowtext;mso-font-kerning:0pt'>&nbsp;</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td width=22 valign=top style='width:16.5pt;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+    line-height:normal;mso-pagination:none;mso-layout-grid-align:none;
+    text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>•</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=266 valign=top style='width:199.5pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>Gallbladder
+    Cancer</span><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    mso-font-kerning:0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=180 valign=top style='width:135.0pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>Maternal
+    Grandmother</span><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    mso-font-kerning:0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=216 valign=top style='width:2.25in;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>62</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td width=22 valign=top style='width:16.5pt;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+    line-height:normal;mso-pagination:none;mso-layout-grid-align:none;
+    text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>•</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=266 valign=top style='width:199.5pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>Lung cancer</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=180 valign=top style='width:135.0pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>Maternal
+    Grandfather</span><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    mso-font-kerning:0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=216 valign=top style='width:2.25in;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>74</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td width=22 valign=top style='width:16.5pt;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+    line-height:normal;mso-pagination:none;mso-layout-grid-align:none;
+    text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>•</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=266 valign=top style='width:199.5pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>Lung cancer</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=180 valign=top style='width:135.0pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>Paternal
+    Grandfather</span><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    mso-font-kerning:0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=216 valign=top style='width:2.25in;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+    none;mso-layout-grid-align:none;text-autospace:none'><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;color:black;
+    mso-color-alt:windowtext;mso-font-kerning:0pt'>&nbsp;</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
+    <td width=22 valign=top style='width:16.5pt;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+    line-height:normal;mso-pagination:none;mso-layout-grid-align:none;
+    text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>•</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=266 valign=top style='width:199.5pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>Testicular
+    cancer</span><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    mso-font-kerning:0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=180 valign=top style='width:135.0pt;background:#FEFEFE;
+    padding:0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>Son</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+    <td width=216 valign=top style='width:2.25in;background:#FEFEFE;padding:
+    0in 0in 0in 0in'>
+    <p class=MsoNormal style='margin-top:0in;margin-right:4.5pt;margin-bottom:
+    0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+    none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+    color:black;mso-color-alt:windowtext;mso-font-kerning:0pt'>29</span><span
+    style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:
+    0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+  none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  11.0pt;font-family:"Segoe UI",sans-serif;color:black;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><b><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;color:#002266;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;
+  height:15.0pt'>
+  <td width=720 valign=bottom style='width:7.5in;padding:0in 0in 0in 0in;
+  height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+  none;mso-layout-grid-align:none;text-autospace:none'><b><span
+  style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;color:#646464;
+  mso-font-kerning:0pt'>Recent Patient Data</span></b><span style='font-size:
+  11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'> <o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.75pt;margin-bottom:
+0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+mso-font-kerning:0pt'>&nbsp;<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <thead>
+  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+   <td width=14 valign=top style='width:10.5pt;border:none;border-bottom:solid windowtext 1.0pt;
+   mso-border-bottom-alt:solid windowtext .5pt;padding:0in 0in 0in 0in'>
+   <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+   none;mso-layout-grid-align:none;text-autospace:none'><b><span
+   style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;color:black;
+   mso-font-kerning:0pt'>&nbsp;<o:p></o:p></span></b></p>
+   </td>
+   <td width=118 valign=bottom style='width:88.3pt;border:none;border-bottom:
+   solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+   padding:0in 0in 0in 0in'>
+   <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+   0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+   none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+   color:#646464;mso-font-kerning:0pt'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></b></p>
+   </td>
+   <td width=118 valign=bottom style='width:88.25pt;border:none;border-bottom:
+   solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+   padding:0in 0in 0in 0in'>
+   <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+   0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+   none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+   color:#646464;mso-font-kerning:0pt'>9/4/2026<o:p></o:p></span></b></p>
+   <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+   0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+   none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+   color:#646464;mso-font-kerning:0pt'>0522<o:p></o:p></span></b></p>
+   </td>
+   <td width=118 valign=bottom style='width:88.25pt;border:none;border-bottom:
+   solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+   padding:0in 0in 0in 0in'>
+   <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+   0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+   none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+   color:#646464;mso-font-kerning:0pt'>9/4/2026<o:p></o:p></span></b></p>
+   <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+   0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+   none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+   color:#646464;mso-font-kerning:0pt'>0954<o:p></o:p></span></b></p>
+   </td>
+   <td width=118 valign=bottom style='width:88.25pt;border:none;border-bottom:
+   solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+   padding:0in 0in 0in 0in'>
+   <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+   0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+   none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+   color:#646464;mso-font-kerning:0pt'>9/4/2026<o:p></o:p></span></b></p>
+   <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+   0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+   none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+   color:#646464;mso-font-kerning:0pt'>1430<o:p></o:p></span></b></p>
+   </td>
+   <td width=118 valign=bottom style='width:88.25pt;border:none;border-bottom:
+   solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+   padding:0in 0in 0in 0in'>
+   <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+   0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+   none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+   color:#646464;mso-font-kerning:0pt'>9/4/2026<o:p></o:p></span></b></p>
+   <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+   0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+   none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+   color:#646464;mso-font-kerning:0pt'>1648<o:p></o:p></span></b></p>
+   </td>
+   <td width=118 valign=bottom style='width:88.25pt;border:none;border-bottom:
+   solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+   padding:0in 0in 0in 0in'>
+   <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+   0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+   none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+   color:#646464;mso-font-kerning:0pt'>9/4/2026<o:p></o:p></span></b></p>
+   <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+   0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+   none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+   color:#646464;mso-font-kerning:0pt'>2142<o:p></o:p></span></b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='mso-yfti-irow:1'>
+  <td width=14 valign=top style='width:10.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+  none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.3pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>BP:<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>113/73<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#C70000;mso-font-kerning:0pt'>93/58<o:p></o:p></span></b></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>99/65<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>109/76<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>118/83<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=14 valign=top style='width:10.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+  none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.3pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Pulse:<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>78<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>76<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>79<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>84<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>88<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=14 valign=top style='width:10.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+  none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.3pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Temp:<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:black;mso-font-kerning:0pt'>37.1 °C (98.8 °F)<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:black;mso-font-kerning:0pt'>37 °C (98.6 °F)<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:black;mso-font-kerning:0pt'>37.2 °C (99 °F)<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:black;mso-font-kerning:0pt'>37.6 °C (99.7 °F)<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:black;mso-font-kerning:0pt'>37.5 °C (99.5 °F)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=14 valign=top style='width:10.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+  none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.3pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Resp:<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>17<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>16<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>16<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>16<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>17<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+  <td width=14 valign=top style='width:10.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+  none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.3pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>SpO2:<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>95 %<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>97 %<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>96 %<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>98 %<o:p></o:p></span></p>
+  </td>
+  <td width=118 valign=top style='width:88.25pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:
+  0in;margin-left:3.75pt;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>97 %<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>&nbsp;<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=720 valign=top style='width:7.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+  none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+  11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=634 colspan=5 valign=top style='width:6.6in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Gram Stain Result<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=158 colspan=2 valign=top style='width:1.65in;background:#EEEEEE;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Date/Time<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;background:#EEEEEE;padding:
+  0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Value<o:p></o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;background:#EEEEEE;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Ref Range<o:p></o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;background:#EEEEEE;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Status<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=158 colspan=2 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>06/08/2026 01:03 PM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:red;mso-font-kerning:0pt'>Gram Positive Bacilli (AA)<o:p></o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=158 colspan=2 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>06/08/2026 01:03 PM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:red;mso-font-kerning:0pt'>Anaerobic Bottle: (AA)<o:p></o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=158 colspan=2 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>06/08/2026 01:03 PM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:red;mso-font-kerning:0pt'>Gram Positive Bacilli (AA)<o:p></o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=158 colspan=2 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>10/02/2025 05:00 PM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>No organisms seen<o:p></o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=158 colspan=2 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>10/02/2025 05:00 PM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>2+ Polymorphonuclear leukocytes<o:p></o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=158 colspan=2 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>10/02/2025 05:00 PM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
+  <td width=22 valign=top style='width:16.2pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+  line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=612 colspan=4 valign=top style='width:459.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Please refer to corresponding aerobic culture for Gram
+  Stain Results<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <![if !supportMisalignedColumns]>
+ <tr height=0>
+  <td width=22 style='border:none'></td>
+  <td width=137 style='border:none'></td>
+  <td width=223 style='border:none'></td>
+  <td width=144 style='border:none'></td>
+  <td width=108 style='border:none'></td>
+ </tr>
+ <![endif]>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:0in;
+margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+color:#666666;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=634 colspan=4 valign=top style='width:6.6in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Bacterial Culture Body Fluid<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=158 valign=top style='width:1.65in;background:#EEEEEE;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Date/Time<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;background:#EEEEEE;padding:
+  0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Value<o:p></o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;background:#EEEEEE;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Ref Range<o:p></o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;background:#EEEEEE;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Status<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=158 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>10/02/2025 05:00 PM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Culture Negative<o:p></o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:0in;
+margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+color:#666666;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-table-layout-alt:fixed;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=634 colspan=6 valign=top style='width:6.6in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Bacterial Culture Urine<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=158 colspan=3 valign=top style='width:1.65in;background:#EEEEEE;
+  padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Date/Time<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;background:#EEEEEE;padding:
+  0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Value<o:p></o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;background:#EEEEEE;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Ref Range<o:p></o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;background:#EEEEEE;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:#666666;mso-font-kerning:0pt'>Status<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=158 colspan=3 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>09/03/2026 01:22 PM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:red;mso-font-kerning:0pt'>&lt;10,000 organisms/mL Klebsiella variicola
+  (A)<o:p></o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=22 valign=top style='width:16.2pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+  line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=22 valign=top style='width:16.2pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+  line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=590 colspan=4 valign=top style='width:6.15in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Comment:<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=22 valign=top style='width:16.2pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+  line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=22 valign=top style='width:16.2pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+  line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=590 colspan=4 valign=top style='width:6.15in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><i><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Identified by MALDI-TOF mass spectrometry.<o:p></o:p></span></i></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=158 colspan=3 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>09/02/2026 08:03 PM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=22 valign=top style='width:16.2pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+  line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=612 colspan=5 valign=top style='width:459.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>&lt;10,000 organisms/mL Unlikely to reflect clinically
+  significant infection.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=158 colspan=3 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>07/20/2026 02:51 AM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=22 valign=top style='width:16.2pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+  line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=612 colspan=5 valign=top style='width:459.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>&lt;10,000 organisms/mL Unlikely to reflect clinically
+  significant infection.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=158 colspan=3 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>06/09/2026 12:02 PM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Culture Negative<o:p></o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=158 colspan=3 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>06/08/2026 01:10 PM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  color:red;mso-font-kerning:0pt'>&gt;100,000 organisms/mL Actinotignum
+  schaalii (A)<o:p></o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=22 valign=top style='width:16.2pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+  line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=22 valign=top style='width:16.2pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+  line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=590 colspan=4 valign=top style='width:6.15in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Comment:<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=22 valign=top style='width:16.2pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+  line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=22 valign=top style='width:16.2pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+  line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=590 colspan=4 valign=top style='width:6.15in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><i><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Identified by MALDI-TOF mass spectrometry.<o:p></o:p></span></i></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><i><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Susceptibility testing for this organism is not
+  routinely performed.<o:p></o:p></span></i></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=158 colspan=3 valign=top style='width:1.65in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>06/12/2025 11:40 AM<o:p></o:p></span></p>
+  </td>
+  <td width=223 valign=top style='width:167.4pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Final<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14;mso-yfti-lastrow:yes'>
+  <td width=22 valign=top style='width:16.2pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center;
+  line-height:normal;mso-pagination:none;mso-layout-grid-align:none;text-autospace:
+  none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=612 colspan=5 valign=top style='width:459.0pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:
+  0in;margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+  none;text-autospace:none'><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+  mso-font-kerning:0pt'>Screen negative by urinalysis. Culture is not indicated
+  for screen negative voided or catheterized urines and will not be performed.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <![if !supportMisalignedColumns]>
+ <tr height=0>
+  <td width=22 style='border:none'></td>
+  <td width=22 style='border:none'></td>
+  <td width=115 style='border:none'></td>
+  <td width=223 style='border:none'></td>
+  <td width=144 style='border:none'></td>
+  <td width=108 style='border:none'></td>
+ </tr>
+ <![endif]>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:0in;
+margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+color:#666666;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:0in;
+margin-left:0in;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+color:#666666;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<span style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-font-kerning:0pt;
+mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA'><br
+clear=all style='mso-special-character:line-break;page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal;mso-pagination:
+none;mso-layout-grid-align:none;text-autospace:none'><span style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<!--EndFragment-->
+</body>
+
+</html>

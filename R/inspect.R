@@ -87,6 +87,64 @@ clipboard_inspect_dib <- function() {
 }
 
 
+
+#' Write Raw Text to Clipboard
+#'
+#' @param data Data to write.
+#' @param format_name Clipboard format.
+#' @export
+clipboard_write_raw <- function(data, format_name) {
+  if (.Platform$OS.type != "windows") {
+    stop("clipboard_write_raw() is currently only implemented on Windows.")
+  }
+
+  clipboard_write_raw_windows(data, format_name)
+}
+
+
+
+#' Write Multiple Formats to the Windows Clipboard
+#'
+#' @param ... Named raw vectors, with the names being clipboard
+#'   format names.
+#'
+#' @return Invisibly returns NULL.
+#' @export
+clipboard_write_formats <- function(...) {
+
+  if (.Platform$OS.type != "windows") {
+    stop(
+      "clipboard_write_formats() is currently only implemented on Windows."
+    )
+  }
+
+  data <- list(...)
+
+  if (length(data) == 0) {
+    stop(
+      "At least one clipboard format must be supplied."
+    )
+  }
+
+  if (is.null(names(data)) ||
+      any(names(data) == "")) {
+    stop(
+      "Clipboard formats must be supplied as named arguments."
+    )
+  }
+
+  if (!all(vapply(data, is.raw, logical(1)))) {
+    stop(
+      "Each clipboard format must be supplied as a raw vector."
+    )
+  }
+
+  clipboard_write_formats_windows(data)
+
+  invisible(NULL)
+}
+
+
 parse_rtf_rows <- function(x) {
 
   stopifnot(length(x) == 1, is.character(x))
