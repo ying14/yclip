@@ -204,207 +204,6 @@ Rcpp::RawVector clipboard_read_raw_windows(std::string format_name) {
   return result;
 }
 
-// [[Rcpp::export]]
-std::string clipboard_read_unicode_text_windows() {
-
-  if (!OpenClipboard(NULL)) {
-    Rcpp::stop("Could not open clipboard.");
-  }
-
-  HANDLE hData = GetClipboardData(CF_UNICODETEXT);
-
-  if (hData == NULL) {
-    CloseClipboard();
-    Rcpp::stop("CF_UNICODETEXT is not available.");
-  }
-
-  wchar_t* ptr = static_cast<wchar_t*>(GlobalLock(hData));
-
-  if (ptr == NULL) {
-    CloseClipboard();
-    Rcpp::stop("Could not lock clipboard data.");
-  }
-
-  int required = WideCharToMultiByte(
-    CP_UTF8,
-    0,
-    ptr,
-    -1,
-    NULL,
-    0,
-    NULL,
-    NULL
-  );
-
-  if (required == 0) {
-    GlobalUnlock(hData);
-    CloseClipboard();
-    Rcpp::stop("Could not convert clipboard text to UTF-8.");
-  }
-
-  std::string result(required, '\0');
-
-  WideCharToMultiByte(
-    CP_UTF8,
-    0,
-    ptr,
-    -1,
-    &result[0],
-    required,
-    NULL,
-    NULL
-  );
-
-  GlobalUnlock(hData);
-  CloseClipboard();
-
-  // Remove the terminating NUL.
-  result.pop_back();
-
-  return result;
-}
-
-
-// [[Rcpp::export]]
-Rcpp::RawVector clipboard_read_dib_windows() {
-
-  if (!OpenClipboard(NULL)) {
-    Rcpp::stop("Could not open clipboard.");
-  }
-
-  HANDLE hData = GetClipboardData(CF_DIB);
-
-  if (hData == NULL) {
-    CloseClipboard();
-    Rcpp::stop("CF_DIB is not available on the clipboard.");
-  }
-
-  SIZE_T size = GlobalSize(hData);
-
-  if (size == 0) {
-    CloseClipboard();
-    Rcpp::stop("CF_DIB data has zero length.");
-  }
-
-  void* ptr = GlobalLock(hData);
-
-  if (ptr == NULL) {
-    CloseClipboard();
-    Rcpp::stop("Could not lock CF_DIB data.");
-  }
-
-  Rcpp::RawVector result(size);
-
-  std::memcpy(result.begin(), ptr, size);
-
-  GlobalUnlock(hData);
-  CloseClipboard();
-
-  return result;
-}
-
-
-// [[Rcpp::export]]
-Rcpp::List clipboard_inspect_dib_windows() {
-
-  if (!OpenClipboard(NULL)) {
-    Rcpp::stop("Could not open clipboard.");
-  }
-
-  HANDLE hData = GetClipboardData(CF_DIB);
-
-  if (hData == NULL) {
-    CloseClipboard();
-    Rcpp::stop("CF_DIB is not available on the clipboard.");
-  }
-
-  void* ptr = GlobalLock(hData);
-
-  if (ptr == NULL) {
-    CloseClipboard();
-    Rcpp::stop("Could not lock CF_DIB data.");
-  }
-
-  BITMAPINFOHEADER* header =
-    static_cast<BITMAPINFOHEADER*>(ptr);
-
-  Rcpp::List result = Rcpp::List::create(
-    Rcpp::_["header_size"] = header->biSize,
-    Rcpp::_["width"] = header->biWidth,
-    Rcpp::_["height"] = header->biHeight,
-    Rcpp::_["planes"] = header->biPlanes,
-    Rcpp::_["bits_per_pixel"] = header->biBitCount,
-    Rcpp::_["compression"] = header->biCompression,
-    Rcpp::_["image_size"] = header->biSizeImage
-  );
-
-  GlobalUnlock(hData);
-  CloseClipboard();
-
-  return result;
-}
-
-
-
-// [[Rcpp::export]]
-void clipboard_write_raw_windows(
-    Rcpp::RawVector data,
-    std::string format_name
-) {
-
-  if (!OpenClipboard(NULL)) {
-    Rcpp::stop("Could not open clipboard.");
-  }
-
-  UINT format = get_clipboard_format_id(format_name);
-
-  if (format == 0) {
-    CloseClipboard();
-    Rcpp::stop("Could not find clipboard format: %s", format_name);
-  }
-
-  HGLOBAL hData = GlobalAlloc(
-    GMEM_MOVEABLE,
-    data.size()
-  );
-
-  if (hData == NULL) {
-    CloseClipboard();
-    Rcpp::stop("Could not allocate clipboard memory.");
-  }
-
-  void* ptr = GlobalLock(hData);
-
-  if (ptr == NULL) {
-    GlobalFree(hData);
-    CloseClipboard();
-    Rcpp::stop("Could not lock clipboard memory.");
-  }
-
-  std::memcpy(
-    ptr,
-    data.begin(),
-    data.size()
-  );
-
-  GlobalUnlock(hData);
-
-  if (!EmptyClipboard()) {
-    GlobalFree(hData);
-    CloseClipboard();
-    Rcpp::stop("Could not empty clipboard.");
-  }
-
-  if (SetClipboardData(format, hData) == NULL) {
-    GlobalFree(hData);
-    CloseClipboard();
-    Rcpp::stop("Could not set clipboard data.");
-  }
-
-  // Windows now owns hData.
-  CloseClipboard();
-}
-
 
 
 // [[Rcpp::export]]
@@ -611,3 +410,207 @@ void clipboard_write_formats_windows(Rcpp::List data) {
 
   CloseClipboard();
 }
+
+
+
+// [[Rcpp::export]]
+std::string clipboard_read_unicode_text_windows() {
+
+  if (!OpenClipboard(NULL)) {
+    Rcpp::stop("Could not open clipboard.");
+  }
+
+  HANDLE hData = GetClipboardData(CF_UNICODETEXT);
+
+  if (hData == NULL) {
+    CloseClipboard();
+    Rcpp::stop("CF_UNICODETEXT is not available.");
+  }
+
+  wchar_t* ptr = static_cast<wchar_t*>(GlobalLock(hData));
+
+  if (ptr == NULL) {
+    CloseClipboard();
+    Rcpp::stop("Could not lock clipboard data.");
+  }
+
+  int required = WideCharToMultiByte(
+    CP_UTF8,
+    0,
+    ptr,
+    -1,
+    NULL,
+    0,
+    NULL,
+    NULL
+  );
+
+  if (required == 0) {
+    GlobalUnlock(hData);
+    CloseClipboard();
+    Rcpp::stop("Could not convert clipboard text to UTF-8.");
+  }
+
+  std::string result(required, '\0');
+
+  WideCharToMultiByte(
+    CP_UTF8,
+    0,
+    ptr,
+    -1,
+    &result[0],
+    required,
+    NULL,
+    NULL
+  );
+
+  GlobalUnlock(hData);
+  CloseClipboard();
+
+  // Remove the terminating NUL.
+  result.pop_back();
+
+  return result;
+}
+
+
+// [[Rcpp::export]]
+Rcpp::RawVector clipboard_read_dib_windows() {
+
+  if (!OpenClipboard(NULL)) {
+    Rcpp::stop("Could not open clipboard.");
+  }
+
+  HANDLE hData = GetClipboardData(CF_DIB);
+
+  if (hData == NULL) {
+    CloseClipboard();
+    Rcpp::stop("CF_DIB is not available on the clipboard.");
+  }
+
+  SIZE_T size = GlobalSize(hData);
+
+  if (size == 0) {
+    CloseClipboard();
+    Rcpp::stop("CF_DIB data has zero length.");
+  }
+
+  void* ptr = GlobalLock(hData);
+
+  if (ptr == NULL) {
+    CloseClipboard();
+    Rcpp::stop("Could not lock CF_DIB data.");
+  }
+
+  Rcpp::RawVector result(size);
+
+  std::memcpy(result.begin(), ptr, size);
+
+  GlobalUnlock(hData);
+  CloseClipboard();
+
+  return result;
+}
+
+
+// [[Rcpp::export]]
+Rcpp::List clipboard_inspect_dib_windows() {
+
+  if (!OpenClipboard(NULL)) {
+    Rcpp::stop("Could not open clipboard.");
+  }
+
+  HANDLE hData = GetClipboardData(CF_DIB);
+
+  if (hData == NULL) {
+    CloseClipboard();
+    Rcpp::stop("CF_DIB is not available on the clipboard.");
+  }
+
+  void* ptr = GlobalLock(hData);
+
+  if (ptr == NULL) {
+    CloseClipboard();
+    Rcpp::stop("Could not lock CF_DIB data.");
+  }
+
+  BITMAPINFOHEADER* header =
+    static_cast<BITMAPINFOHEADER*>(ptr);
+
+  Rcpp::List result = Rcpp::List::create(
+    Rcpp::_["header_size"] = header->biSize,
+    Rcpp::_["width"] = header->biWidth,
+    Rcpp::_["height"] = header->biHeight,
+    Rcpp::_["planes"] = header->biPlanes,
+    Rcpp::_["bits_per_pixel"] = header->biBitCount,
+    Rcpp::_["compression"] = header->biCompression,
+    Rcpp::_["image_size"] = header->biSizeImage
+  );
+
+  GlobalUnlock(hData);
+  CloseClipboard();
+
+  return result;
+}
+
+
+
+// [[Rcpp::export]]
+void clipboard_write_raw_windows(
+    Rcpp::RawVector data,
+    std::string format_name
+) {
+
+  if (!OpenClipboard(NULL)) {
+    Rcpp::stop("Could not open clipboard.");
+  }
+
+  UINT format = get_clipboard_format_id(format_name);
+
+  if (format == 0) {
+    CloseClipboard();
+    Rcpp::stop("Could not find clipboard format: %s", format_name);
+  }
+
+  HGLOBAL hData = GlobalAlloc(
+    GMEM_MOVEABLE,
+    data.size()
+  );
+
+  if (hData == NULL) {
+    CloseClipboard();
+    Rcpp::stop("Could not allocate clipboard memory.");
+  }
+
+  void* ptr = GlobalLock(hData);
+
+  if (ptr == NULL) {
+    GlobalFree(hData);
+    CloseClipboard();
+    Rcpp::stop("Could not lock clipboard memory.");
+  }
+
+  std::memcpy(
+    ptr,
+    data.begin(),
+    data.size()
+  );
+
+  GlobalUnlock(hData);
+
+  if (!EmptyClipboard()) {
+    GlobalFree(hData);
+    CloseClipboard();
+    Rcpp::stop("Could not empty clipboard.");
+  }
+
+  if (SetClipboardData(format, hData) == NULL) {
+    GlobalFree(hData);
+    CloseClipboard();
+    Rcpp::stop("Could not set clipboard data.");
+  }
+
+  // Windows now owns hData.
+  CloseClipboard();
+}
+

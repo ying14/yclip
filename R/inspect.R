@@ -13,7 +13,6 @@ clipboard_inspect <- function() {
   if (.Platform$OS.type != "windows") {
     stop("clipboard_inspect() is currently only implemented on Windows.")
   }
-
   clipboard_inspect_windows()
 }
 
@@ -44,15 +43,12 @@ clipboard_read_raw <- function(format_name) {
 #'
 #' @examples
 clipboard_read_text <- function(format_name) {
-
   if (.Platform$OS.type != "windows") {
     stop("clipboard_read_text() is currently only implemented on Windows.")
   }
-
   if (format_name == "CF_UNICODETEXT") {
     return(clipboard_read_unicode_text_windows())
   }
-
   x <- clipboard_read_raw(format_name)
   rawToChar(x)
 }
@@ -64,11 +60,9 @@ clipboard_read_text <- function(format_name) {
 #' @return A raw vector containing Windows DIB data.
 #' @export
 clipboard_read_dib <- function() {
-
   if (.Platform$OS.type != "windows") {
     stop("clipboard_read_dib() is currently only implemented on Windows.")
   }
-
   clipboard_read_dib_windows()
 }
 
@@ -78,11 +72,9 @@ clipboard_read_dib <- function() {
 #' @return A list containing DIB image metadata.
 #' @export
 clipboard_inspect_dib <- function() {
-
   if (.Platform$OS.type != "windows") {
     stop("clipboard_inspect_dib() is currently only implemented on Windows.")
   }
-
   clipboard_inspect_dib_windows()
 }
 
@@ -97,7 +89,6 @@ clipboard_write_raw <- function(data, format_name) {
   if (.Platform$OS.type != "windows") {
     stop("clipboard_write_raw() is currently only implemented on Windows.")
   }
-
   clipboard_write_raw_windows(data, format_name)
 }
 
@@ -111,120 +102,210 @@ clipboard_write_raw <- function(data, format_name) {
 #' @return Invisibly returns NULL.
 #' @export
 clipboard_write_formats <- function(...) {
-
   if (.Platform$OS.type != "windows") {
-    stop(
-      "clipboard_write_formats() is currently only implemented on Windows."
-    )
+    stop("clipboard_write_formats() is currently only implemented on Windows.")
   }
-
   data <- list(...)
-
   if (length(data) == 0) {
-    stop(
-      "At least one clipboard format must be supplied."
-    )
+    stop("At least one clipboard format must be supplied.")
   }
-
-  if (is.null(names(data)) ||
-      any(names(data) == "")) {
-    stop(
-      "Clipboard formats must be supplied as named arguments."
-    )
+  if (is.null(names(data)) || any(names(data) == "")) {
+    stop("Clipboard formats must be supplied as named arguments.")
   }
-
   if (!all(vapply(data, is.raw, logical(1)))) {
-    stop(
-      "Each clipboard format must be supplied as a raw vector."
-    )
+    stop("Each clipboard format must be supplied as a raw vector.")
   }
-
   clipboard_write_formats_windows(data)
-
   invisible(NULL)
 }
 
 
+
+#' Converts DIB raw to BMP magick object
+#'
+#' @param dib dib raw object
+#'
+#' @return
+#' @export
+#'
+#' @examples
+dib_to_bmp <- function(dib) {
+  if (!is.raw(dib)) {
+    stop("'dib' must be a raw vector.")
+  }
+  if (length(dib) < 40L) {
+    stop("DIB is too short to contain a BITMAPINFOHEADER.")
+  }
+  # Helper: read unsigned 16-bit little-endian integer
+  read_uint16_le <- function(x, offset) {
+    as.integer(x[offset]) + 256L * as.integer(x[offset + 1L])
+  }
+  # Helper: read unsigned 32-bit little-endian integer
+  read_uint32_le <- function(x, offset) {
+    b <- as.integer(x[offset:(offset + 3L)])
+    sum(b * 256^(0:3))
+  }
+  # BITMAPINFOHEADER fields
+  header_size <- read_uint32_le(dib, 1L)
+  if (!(header_size %in% c(40L, 52L, 56L, 108L, 124L))) {
+    stop("Unsupported DIB header size: ",header_size," bytes.")
+  }
+  width <- read_uint32_le(dib, 5L)
+  height_raw <- read_uint32_le(dib, 9L)
+  planes <- read_uint16_le(dib, 13L)
+  bit_count <- read_uint16_le(dib, 15L)
+  compression <- read_uint32_le(dib, 17L)
+  size_image <- read_uint32_le(dib, 21L)
+  clr_used <- read_uint32_le(dib, 33L)
+  if (planes != 1L) {
+    stop("Unsupported DIB: biPlanes must be 1.")
+  }
+  # Compression constants
+  BI_RGB <- 0L
+  BI_RLE8 <- 1L
+  BI_RLE4 <- 2L
+  BI_BITFIELDS <- 3L
+  BI_JPEG <- 4L
+  BI_PNG <- 5L
+  if (compression %in% c(BI_RLE8, BI_RLE4, BI_JPEG, BI_PNG)) {
+    stop(
+      "DIB uses unsupported compression type: ",
+      compression,
+      "."
+    )
+  }
+  # ------------------------------------------------------------
+  # Determine where the pixel data begins in the DIB.
+  #
+  # DIB layout:
+  #
+  #   BITMAPINFOHEADER
+  #   color masks (for BI_BITFIELDS, if applicable)
+  #   color table (if applicable)
+  #   pixel data
+  # ------------------------------------------------------------
+  pixel_offset_dib <- header_size
+  # For BITMAPV2/V3/V4/V5-style headers, masks may already
+  # be incorporated into the header. For a 40-byte
+  # BITMAPINFOHEADER with BI_BITFIELDS, the masks follow it.
+  if (compression == BI_BITFIELDS && header_size == 40L) {
+    pixel_offset_dib <- pixel_offset_dib + 12L
+  }
+  # Determine whether a color table is present.
+  #
+  # For <= 8 bits/pixel, a palette normally follows the header
+  # (and any masks).
+  if (bit_count <= 8L) {
+    if (clr_used != 0L) {
+      n_colors <- clr_used
+    } else {
+      n_colors <- 2^bit_count
+    }
+    pixel_offset_dib <- pixel_offset_dib + 4L * n_colors
+  }
+  # Validate that the calculated pixel offset is plausible.
+  if (pixel_offset_dib >= length(dib)) {
+    stop(
+      "Calculated pixel-data offset is outside the DIB."
+    )
+  }
+  # ------------------------------------------------------------
+  # BMP BITMAPFILEHEADER
+  #
+  # Offset  Size  Field
+  # 0       2     bfType       ("BM")
+  # 2       4     bfSize
+  # 6       2     bfReserved1
+  # 8       2     bfReserved2
+  # 10      4     bfOffBits
+  # ------------------------------------------------------------
+  file_size <- 14L + length(dib)
+  # Pixel offset in the BMP file is:
+  #   14-byte BMP file header
+  #   + pixel offset within the DIB
+  off_bits <- 14L + pixel_offset_dib
+  # Helper: encode unsigned integer as little-endian raw bytes
+  uint16_le <- function(x) {
+    x <- as.integer(x)
+    as.raw(c(
+      bitwAnd(x, 0xFF),
+      bitwAnd(bitwShiftR(x, 8), 0xFF)
+    ))
+  }
+  uint32_le <- function(x) {
+    # Avoid bitwShiftR problems with values above 2^31
+    x <- as.double(x)
+    b1 <- x %% 256
+    x <- floor(x / 256)
+    b2 <- x %% 256
+    x <- floor(x / 256)
+    b3 <- x %% 256
+    x <- floor(x / 256)
+    b4 <- x %% 256
+    as.raw(c(b1, b2, b3, b4))
+  }
+  bmp_header <- c(
+    # bfType = "BM"
+    charToRaw("BM"),
+    # bfSize
+    uint32_le(file_size),
+    # bfReserved1
+    uint16_le(0),
+    # bfReserved2
+    uint16_le(0),
+    # bfOffBits
+    uint32_le(off_bits)
+  )
+  stopifnot(length(bmp_header) == 14L)
+  # Construct the BMP
+  bmp <- c(bmp_header, dib)
+  bmp
+}
+
 parse_rtf_rows <- function(x) {
-
   stopifnot(length(x) == 1, is.character(x))
-
-  matches <- stringr::str_locate_all(
-    x,
-    "\\\\trowd\\b|\\\\cell(?![a-zA-Z])|\\\\row\\b"
-  )[[1]]
-
+  matches <- stringr::str_locate_all(x,"\\\\trowd\\b|\\\\cell(?![a-zA-Z])|\\\\row\\b")[[1]]
   if (nrow(matches) == 0) {
     return(list())
   }
-
   tokens <- stringr::str_sub(
     x,
     matches[, "start"],
     matches[, "end"]
   )
-
   rows <- list()
   current_row <- character()
   cell_start <- NULL
-
   for (i in seq_len(nrow(matches))) {
-
     token <- tokens[i]
     pos   <- matches[i, "start"]
     end   <- matches[i, "end"]
-
     if (token == "\\trowd") {
-
       current_row <- character()
       cell_start <- end + 1L
-
     } else if (token == "\\cell") {
-
       if (!is.null(cell_start)) {
-
-        txt <- stringr::str_sub(
-          x,
-          cell_start,
-          pos - 1L
-        )
-
-        current_row <- c(
-          current_row,
-          rtf_strip_simple(txt)
-        )
+        txt <- stringr::str_sub(x,cell_start,pos - 1L)
+        current_row <- c(current_row,rtf_strip_simple(txt))
       }
-
       cell_start <- end + 1L
-
     } else if (token == "\\row") {
-
       # Add any text between the final \cell and \row,
       # but only if it contains actual content.
       if (!is.null(cell_start)) {
-
-        txt <- stringr::str_sub(
-          x,
-          cell_start,
-          pos - 1L
-        )
-
+        txt <- stringr::str_sub(x,cell_start,pos - 1L)
         txt <- rtf_strip_simple(txt)
-
         if (nzchar(txt)) {
           current_row <- c(current_row, txt)
         }
       }
-
       if (length(current_row) > 0) {
         rows[[length(rows) + 1L]] <- current_row
       }
-
       current_row <- character()
       cell_start <- NULL
     }
   }
-
   rows
 }
 

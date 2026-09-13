@@ -17,3 +17,4 @@ LinkingTo:
 URL: https://github.com/ying14/yclip
 BugReports: https://github.com/ying14/yclip/issues
 Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.2.3

@@ -4,151 +4,119 @@
 library(yclip)
 library(yingtools2)
 library(tidyverse)
-
+library(magick)
 
 clipboard_inspect()
 
 # word
 rtf <- clipboard_read_text("Rich Text Format")
 html <- clipboard_read_text("HTML Format")
-
-# text
 text <- clipboard_read_text("CF_TEXT")
 unicode <- clipboard_read_text("CF_UNICODETEXT")
 
-# photos
-dib <- clipboard_read_raw("CF_DIB")
-clipboard_inspect_dib()
-# bitmaps: PNG, GIF, CF_DIB
+raw_rtf <- clipboard_read_raw("Rich Text Format")
+raw_html <- clipboard_read_raw("HTML Format")
+raw_text <- clipboard_read_raw("CF_TEXT")
+raw_unicode <- clipboard_read_raw("CF_UNICODETEXT")
 
-rtf <- clipboard_read_text("Rich Text Format")
-clipboard_write_raw(rtf,"Rich Text Format")
-writeLines(rtf,"asdf2.rtf")
-
-
-
-
-
-rtf_raw  <- clipboard_read_raw("Rich Text Format")
-html_raw <- clipboard_read_raw("HTML Format")
 clipboard_write_formats(
-  "Rich Text Format" = rtf_raw,
-  "HTML Format" = html_raw
+  "Rich Text Format" = raw_rtf,
+  "HTML Format" = raw_html,
+  "CF_TEXT" = raw_text,
+  "CF_UNICODETEXT" = raw_unicode
+)
+
+clipboard_inspect()
+rtf2 <- clipboard_read_text("Rich Text Format")
+html2 <- clipboard_read_text("HTML Format")
+text2 <- clipboard_read_text("CF_TEXT")
+unicode2 <- clipboard_read_text("CF_UNICODETEXT")
+
+
+
+# CF_DIB
+# CF_BITMAP
+# CF_DIBV5
+# PNG
+# JFIF
+# GIF
+clipboard_inspect()
+raw_dib <- clipboard_read_raw("CF_DIB")
+raw_dibv5 <- clipboard_read_raw("CF_DIBV5")
+raw_png <- clipboard_read_raw("PNG")
+raw_jfif<- clipboard_read_raw("JFIF")
+raw_gif <- clipboard_read_raw("GIF")
+
+# raw_bitmap <- clipboard_read_raw("CF_BITMAP")
+
+
+clipboard_write_formats(
+  "CF_DIB" = raw_dib,
+  "CF_DIBV5" = raw_dibv5,
+  "PNG" = raw_png,
+  "JFIF" = raw_jfif,
+  "GIF" = raw_gif
 )
 clipboard_inspect()
 
-clipboard_write_formats(
-  "Rich Text Format" = rtf_raw
-)
+
+# img <- image_read("pic.jpg")
+# print(img)
+dib <- image_read(dib_to_bmp(raw_dib))
+dibv5 <- image_read(dib_to_bmp(raw_dibv5))
+jpg <- image_read(raw_jfif)
+gif <- image_read(raw_gif)
+png <- image_read(raw_png)
+
+print(dib)
+print(dibv5)
+print(jpg)
+print(gif)
+print(png)
+
+dib2 <- image_resize(dib, "50x")
+dibv52 <- image_resize(dibv5, "50x")
+png2 <- image_resize(png, "50x")
+jpg2 <- image_resize(jpg, "50x")
+gif2 <- image_resize(gif, "50x")
+
+print(dib2)
+print(dibv52)
+print(png2)
+print(jpg2)
+print(gif2)
+
+raw_dib2 <- image_write(dib2, format = "bmp")
+raw_dib2 <- raw_dib2[(-1:14)]
+
+raw_dibv52 <- image_write(dibv52, format = "bmp")
+raw_png2 <- image_write(png2, format = "png")
+raw_jfif2 <- image_write(jpg2, format = "jpg")
+raw_gif2 <- image_write(gif2, format = "gif")
 
 clipboard_write_formats(
-  "HTML Format" = html_raw
+  "CF_DIB" = raw_dib2,
+  "CF_DIBV5" = raw_dibv52,
+  "PNG" = raw_png2,
+  "JFIF" = raw_jfif2,
+  "GIF" = raw_gif
+)
+
+
+clipboard_write_formats(
+  "CF_DIB" = raw_dib
 )
 
 
 
+bmp <- dib_to_bmp(raw_dib)
+img <- image_read(bmp)
+image_info(img)
 
 
 
 
-# clipboard_inspect()
-# rtf <- clipboard_read_text("Rich Text Format")
-# clipboard_write_raw(rtf, "Rich Text Format")
-# clipboard_inspect()
-#
-#
-#
-# rtf_raw <- clipboard_read_raw("Rich Text Format")
-# clipboard_write_raw(rtf_raw, "Rich Text Format")
-#
-# rtf
-#
-# rtf_raw <- clipboard_read_raw("Rich Text Format")
-#
-# clipboard_write_raw(rtf_raw, "Rich Text Format")
-#
-#
-#
-# clip_write(html,"html")
-# clip_write(rtf,"Rich Text Format")
-#
-#
-#
-# clipboard_write_raw(html,"HTML Format")
-#
-# clipboard_write_raw(rtf,"Rich Text Format")
-# write_lines(rtf,"asdf2.rtf")
-# clipboard_write_raw
-#
-# # devtools::document()
-# # devtools::load_all
-#
-# clipboard_read_text("")
-#
-#
-# library(Rcpp)
-# devtools::load_all()
-# Rcpp::sto
-# show_shapes()
-#
-#
-# clip_formats_available()
-# gts <- clip_read("html")
-# txt <- clip_read("text")
-# html <- clip_read("html")
-#
-# clipboard_read_raw("html")
-#
-# yclip:::clipboard_read_raw("HTML Format")
-# yclip:::clipboard_read_raw("Text")
-#
-# yclip:::clipboard_read_raw_windows("html")
-# yclip:::clipboard_read_raw_windows("HTML Format")
-# clipboard_read_raw("Html")
-#
-# clipboard_read_raw(format_name)
-#
-#
-#
-# yclip:::clipboard_read_raw(format_name = "Html")
-#
-# html <- clipboard_read_raw("Html")
-# clipboard_read_raw("Html")
-#
-#
-# read_clipboard_raw("Html")
-#
-#
-# yclip:::clipboard_read_raw_windows("Html")
-# yclip:::clipboard_read_raw_windows("html")
-# html
-#
-# html %>% class
-#
-#
-# clip_write(html,"html")
-#
-#
-#
-#
-#
-# clip_write(html,"text")
-# # clip_write(html,"rtf")
-#
-#
-#
-#
-# rtf_raw <- clipboard_read_raw("Rich Text Format")
-#
-# clipboard_write_raw(
-#   rtf_raw,
-#   "Rich Text Format"
-# )
-#
-#
-#
-#
-#
-#
-#
-#
+
+
+
+

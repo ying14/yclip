@@ -13,6 +13,10 @@ clipboard_read_raw_windows <- function(format_name) {
     .Call(`_yclip_clipboard_read_raw_windows`, format_name)
 }
 
+clipboard_write_formats_windows <- function(data) {
+    invisible(.Call(`_yclip_clipboard_write_formats_windows`, data))
+}
+
 clipboard_read_unicode_text_windows <- function() {
     .Call(`_yclip_clipboard_read_unicode_text_windows`)
 }
@@ -27,9 +31,5 @@ clipboard_inspect_dib_windows <- function() {
 
 clipboard_write_raw_windows <- function(data, format_name) {
     invisible(.Call(`_yclip_clipboard_write_raw_windows`, data, format_name))
-}
-
-clipboard_write_formats_windows <- function(data) {
-    invisible(.Call(`_yclip_clipboard_write_formats_windows`, data))
 }
 
