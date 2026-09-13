@@ -262,6 +262,165 @@ dib_to_bmp <- function(dib) {
   bmp
 }
 
+
+#' Convert a magick image to an Office-compatible CF_DIB
+#'
+#' Converts a single `magick-image` object to the raw representation of a
+#' Windows `CF_DIB` clipboard format. The DIB uses a 32-bit
+#' `BITMAPINFOHEADER` with `BI_BITFIELDS` RGB masks and bottom-up BGR0 pixel
+#' data. This representation is compatible with Microsoft Office
+#' applications such as Word and PowerPoint.
+#'
+#' This is an internal helper used by [clipboard_write_image()] and is not
+#' intended to be called directly by users.
+#'
+#' @param img A single `magick-image` object.
+#'
+#' @return A raw vector containing the `CF_DIB` data, suitable for use with
+#'   [clipboard_write_formats()].
+#'
+#' @keywords internal
+magick_to_cf_dib <- function(img) {
+  if (!inherits(img, "magick-image")) {
+    stop("`img` must be a magick-image.", call. = FALSE)
+  }
+
+  info <- magick::image_info(img)
+
+  if (nrow(info) != 1L) {
+    stop("`img` must contain exactly one image.", call. = FALSE)
+  }
+
+  width  <- info$width
+  height <- info$height
+
+  # Get uncompressed RGBA pixels.
+  rgba <- as.integer(
+    magick::image_write(img, format = "rgba")
+  )
+
+  expected <- width * height * 4L
+
+  if (length(rgba) != expected) {
+    stop(
+      sprintf(
+        "Unexpected RGBA data length: got %d, expected %d.",
+        length(rgba), expected
+      ),
+      call. = FALSE
+    )
+  }
+
+  # RGBA -> BGR0.
+  pixels <- matrix(rgba, ncol = 4L, byrow = TRUE)
+  pixels <- pixels[, c(3L, 2L, 1L, 4L), drop = FALSE]
+
+  # CF_DIB structure we are reproducing uses BGR0.
+  pixels[, 4L] <- 0L
+
+  # Reshape into:
+  #   width x height x 4
+  #
+  # and reverse the rows because a positive BITMAPINFOHEADER
+  # height specifies bottom-up pixel storage.
+  pixels <- array(pixels, dim = c(width, height, 4L))
+  pixels <- pixels[, height:1L, , drop = FALSE]
+
+  pixel_data <- as.raw(aperm(pixels, c(3L, 1L, 2L)))
+
+  # ---------------------------------------------------------------
+  # BITMAPINFOHEADER -- 40 bytes
+  # ---------------------------------------------------------------
+
+  put_u16 <- function(value) {
+    c(
+      bitwAnd(value, 0xFF),
+      bitwAnd(bitwShiftR(value, 8L), 0xFF)
+    )
+  }
+
+  put_u32 <- function(value) {
+    value <- as.numeric(value)
+
+    c(
+      bitwAnd(value, 0xFF),
+      bitwAnd(floor(value / 256), 0xFF),
+      bitwAnd(floor(value / 256^2), 0xFF),
+      bitwAnd(floor(value / 256^3), 0xFF)
+    )
+  }
+
+  header <- c(
+    put_u32(40),             # biSize
+    put_u32(width),          # biWidth
+    put_u32(height),         # biHeight
+    put_u16(1),              # biPlanes
+    put_u16(32),             # biBitCount
+    put_u32(3),              # biCompression = BI_BITFIELDS
+    put_u32(length(pixel_data)), # biSizeImage
+    put_u32(0),              # biXPelsPerMeter
+    put_u32(0),              # biYPelsPerMeter
+    put_u32(0),              # biClrUsed
+    put_u32(0)               # biClrImportant
+  )
+
+  stopifnot(length(header) == 40L)
+
+  # ---------------------------------------------------------------
+  # RGB masks -- 12 bytes
+  # ---------------------------------------------------------------
+
+  masks <- as.raw(c(
+    # Red   = 0x00FF0000
+    0x00, 0x00, 0xFF, 0x00,
+
+    # Green = 0x0000FF00
+    0x00, 0xFF, 0x00, 0x00,
+
+    # Blue  = 0x000000FF
+    0xFF, 0x00, 0x00, 0x00
+  ))
+
+  c(as.raw(header), masks, pixel_data)
+}
+
+
+
+#' Convert a magick image to a CF_DIBV5 clipboard representation
+#'
+#' Converts a single `magick-image` object to the raw data used by the
+#' Windows `CF_DIBV5` clipboard format. The image is written by ImageMagick
+#' as a BMP file and the 14-byte BMP file header is removed, leaving the
+#' `BITMAPV5HEADER` and associated pixel data required by `CF_DIBV5`.
+#'
+#' The resulting raw vector can be supplied to [clipboard_write_formats()].
+#'
+#' This is an internal helper used by [clipboard_write_image()] and is not
+#' intended to be called directly by users.
+#'
+#' @param img A single `magick-image` object.
+#'
+#' @return A raw vector containing the `CF_DIBV5` data.
+#'
+#' @keywords internal
+magick_to_cf_dibv5 <- function(img) {
+  if (!inherits(img, "magick-image")) {
+    stop("`img` must be a magick-image.", call. = FALSE)
+  }
+
+  info <- magick::image_info(img)
+
+  if (nrow(info) != 1L) {
+    stop("`img` must contain exactly one image.", call. = FALSE)
+  }
+
+  bmp <- magick::image_write(img, format = "bmp")
+
+  # Remove the 14-byte BITMAPFILEHEADER.
+  bmp[-seq_len(14L)]
+}
+
+
 parse_rtf_rows <- function(x) {
   stopifnot(length(x) == 1, is.character(x))
   matches <- stringr::str_locate_all(x,"\\\\trowd\\b|\\\\cell(?![a-zA-Z])|\\\\row\\b")[[1]]
