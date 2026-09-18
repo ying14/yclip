@@ -7,7 +7,6 @@
 # usethis::use_rcpp()
 
 
-
 # add package dependencies to imports of DESCRIPTION
 
 
@@ -16,6 +15,11 @@
 "_PACKAGE"
 
 ## usethis namespace: start
+#' @import purrr
+#' @import readr
+#' @import stringr
+#' @import magick
+#' @import RDCOMClient
 #' @importFrom Rcpp sourceCpp
 #' @useDynLib yclip, .registration = TRUE
 ## usethis namespace: end

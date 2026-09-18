@@ -80,46 +80,106 @@ clipboard_inspect_dib <- function() {
 
 
 
-#' Write Raw Text to Clipboard
+
+#' Write One or More Formats to the Windows Clipboard
 #'
-#' @param data Data to write.
-#' @param format_name Clipboard format.
-#' @export
-clipboard_write_raw <- function(data, format_name) {
-  if (.Platform$OS.type != "windows") {
-    stop("clipboard_write_raw() is currently only implemented on Windows.")
-  }
-  clipboard_write_raw_windows(data, format_name)
-}
-
-
-
-#' Write Multiple Formats to the Windows Clipboard
-#'
-#' @param ... Named raw vectors, with the names being clipboard
-#'   format names.
+#' @param ... Named raw vectors or character strings, with the names being
+#'   clipboard format names. Character strings are encoded according to the
+#'   clipboard format. Raw vectors are written unchanged.
 #'
 #' @return Invisibly returns NULL.
 #' @export
 clipboard_write_formats <- function(...) {
   if (.Platform$OS.type != "windows") {
-    stop("clipboard_write_formats() is currently only implemented on Windows.")
+    cli::cli_abort("clipboard_write_formats() is currently only implemented on Windows.")
   }
   data <- list(...)
   if (length(data) == 0) {
-    stop("At least one clipboard format must be supplied.")
+    cli::cli_abort("At least one clipboard format must be supplied.")
   }
   if (is.null(names(data)) || any(names(data) == "")) {
-    stop("Clipboard formats must be supplied as named arguments.")
+    cli::cli_abort("Clipboard formats must be supplied as named arguments.")
   }
-  if (!all(vapply(data, is.raw, logical(1)))) {
-    stop("Each clipboard format must be supplied as a raw vector.")
-  }
+  data <- purrr::map2(data,names(data),clipboard_encode_data)
   clipboard_write_formats_windows(data)
   invisible(NULL)
 }
 
 
+
+#' Convert data to raw
+#'
+#' Internal function that converts data to raw.
+#' Similar to `charToRaw()`
+#'
+#' We need to do modifications depending on the format.
+#' For `CF_TEXT` and `CF_UNICODETEXT`, we need to add bytes at the end,
+#' And for `CF_UNICODETEXT` we need UTF-16LE.
+#' @param data
+#' @param format_name
+#' @return raw data
+clipboard_encode_text <- function(data, format_name) {
+  if (is.raw(data)) {
+    return(data)
+  }
+  if (!is.character(data)) {
+    cli::cli_abort("Data for clipboard format {.val {format_name}} must be a raw vector or character vector.")
+  }
+  if (length(data) != 1L || is.na(data)) {
+    cli::cli_abort("Character data for clipboard format {.val {format_name}} must be a single non-missing string.")
+  }
+  switch(
+    format_name,
+    "CF_TEXT" = {
+      c(charToRaw(data),as.raw(0))
+    },
+    "CF_UNICODETEXT" = {
+      bytes <- iconv(data,from = "UTF-8",to = "UTF-16LE",toRaw = TRUE)[[1]]
+      if (is.null(bytes)) {
+        cli::cli_abort("Could not convert character data to UTF-16LE.")
+      }
+      c(bytes,as.raw(c(0, 0)))
+    },
+    charToRaw(data)
+  )
+}
+
+clipboard_encode_image <- function(data, format_name) {
+  switch(
+    format_name,
+    "PNG" = magick::image_write(
+      data,
+      format = "png"
+    ),
+    "JFIF" = magick::image_write(
+      data,
+      format = "jpeg"
+    ),
+    "GIF" = magick::image_write(
+      data,
+      format = "gif"
+    ),
+    "CF_DIB" = magick_to_cf_dib(data),
+    "CF_DIBV5" = magick_to_cf_dibv5(data),
+    cli::cli_abort("Clipboard format {.val {format_name}} is not a supported image format.")
+  )
+}
+
+
+clipboard_encode_data <- function(data, format_name) {
+  if (is.raw(data)) {
+    return(data)
+  }
+  if (is.character(data)) {
+    return(clipboard_encode_text(data, format_name))
+  }
+  if (inherits(data, "magick-image")) {
+    return(clipboard_encode_image(data, format_name))
+  }
+  cli::cli_abort(
+    "Data for clipboard format {.val {format_name}} must be a raw vector, character string, or {.cls magick-image}."
+  )
+}
 
 #' Converts DIB raw to BMP magick object
 #'
@@ -279,6 +339,7 @@ dib_to_bmp <- function(dib) {
 #' @return A raw vector containing the `CF_DIB` data, suitable for use with
 #'   [clipboard_write_formats()].
 #'
+#' @export
 #' @keywords internal
 magick_to_cf_dib <- function(img) {
   if (!inherits(img, "magick-image")) {
@@ -402,6 +463,7 @@ magick_to_cf_dib <- function(img) {
 #'
 #' @return A raw vector containing the `CF_DIBV5` data.
 #'
+#' @export
 #' @keywords internal
 magick_to_cf_dibv5 <- function(img) {
   if (!inherits(img, "magick-image")) {
@@ -419,6 +481,107 @@ magick_to_cf_dibv5 <- function(img) {
   # Remove the 14-byte BITMAPFILEHEADER.
   bmp[-seq_len(14L)]
 }
+
+
+
+
+#' Read an Image from the Windows Clipboard
+#'
+#' @param format_name Clipboard image format to read. If `NULL`, the first
+#'   available format from the preferred image-format order is used.
+#'
+#' @return A `magick-image` object.
+#' @export
+clipboard_read_image <- function(format_name = NULL) {
+  if (.Platform$OS.type != "windows") {
+    cli::cli_abort(
+      "clipboard_read_image() is currently only implemented on Windows."
+    )
+  }
+  if (is.null(format_name)) {
+    format_name <- clipboard_choose_image_format()
+  }
+  clipboard_decode_image(format_name)
+}
+
+
+clipboard_choose_image_format <- function() {
+  formats <- clipboard_inspect()
+  preferred_formats <- c(
+    "PNG",
+    "JFIF",
+    "GIF",
+    "CF_DIBV5",
+    "CF_DIB"
+  )
+  available_formats <- formats$name
+  format_name <- preferred_formats[
+    preferred_formats %in% available_formats
+  ]
+  if (length(format_name) == 0) {
+    cli::cli_abort("No supported image format is available on the clipboard.")
+  }
+  format_name[[1]]
+}
+
+
+
+clipboard_decode_image <- function(format_name) {
+  supported_formats <- c("PNG", "JFIF", "GIF", "CF_DIB", "CF_DIBV5")
+  if (!format_name %in% supported_formats) {
+    cli::cli_abort("Clipboard format {.val {format_name}} is not a supported image format.")
+  }
+  data <- clipboard_read_raw(format_name)
+  if (format_name %in% c("CF_DIB", "CF_DIBV5")) {
+    data <- dib_to_bmp(data)
+  }
+  magick::image_read(data)
+}
+
+
+
+#' Convert RTF text to HTML
+#'
+#' @param rtf character RTF data
+#' @return character HTML data
+#'
+#' @export
+word_convert_rtf_to_html <- function(rtf) {
+  if (!requireNamespace("RDCOMClient", quietly = TRUE)) {
+    stop("Package 'RDCOMClient' is required for this function. ",
+         "Install it from https://github.com/omegahat/RDCOMClient.", call. = FALSE)
+  }
+  # RDCOMClient's C callbacks do a search-path lookup rather than a
+  # namespace-aware one, so requireNamespace() alone isn't enough --
+  # it has to actually be attached, not just loaded.
+  if (!"package:RDCOMClient" %in% search()) {
+    attachNamespace("RDCOMClient")
+  }
+
+  temp.rtf.infile <- tempfile("yclip_",fileext=".rtf")
+  temp.html.outfile <- tempfile("yclip_",fileext=".html")
+  write_lines(rtf,file=temp.rtf.infile)
+  wd <- RDCOMClient::COMCreate("Word.Application")
+  wd[["Visible"]] <- FALSE
+  doc <- wd$Documents()$Open(normalizePath(temp.rtf.infile))
+  doc$SaveAs2(normalizePath(temp.html.outfile, mustWork = FALSE), FileFormat = 8)
+  doc$Close()
+  wd$Quit()
+  html <- read_lines(temp.html.outfile)
+
+  tempfiles <- c(temp.rtf.infile,temp.html.outfile)
+  # temp pic files - will be erased
+  temp.html.additional.dir <- str_replace(temp.html.outfile,"\\.html","_files")
+  if (dir.exists(temp.html.additional.dir)) {
+    extra.files <- list.files(temp.html.additional.dir,full.names=TRUE)
+    tempfiles <- c(tempfiles,extra.files)
+  }
+  html <- read_lines(temp.html.outfile)
+  unlink(tempfiles)
+  return(html)
+}
+
+
 
 
 parse_rtf_rows <- function(x) {

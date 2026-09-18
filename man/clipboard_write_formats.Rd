@@ -2,17 +2,18 @@
 % Please edit documentation in R/inspect.R
 \name{clipboard_write_formats}
 \alias{clipboard_write_formats}
-\title{Write Multiple Formats to the Windows Clipboard}
+\title{Write One or More Formats to the Windows Clipboard}
 \usage{
 clipboard_write_formats(...)
 }
 \arguments{
-\item{...}{Named raw vectors, with the names being clipboard
-format names.}
+\item{...}{Named raw vectors or character strings, with the names being
+clipboard format names. Character strings are encoded according to the
+clipboard format. Raw vectors are written unchanged.}
 }
 \value{
 Invisibly returns NULL.
 }
 \description{
-Write Multiple Formats to the Windows Clipboard
+Write One or More Formats to the Windows Clipboard
 }
