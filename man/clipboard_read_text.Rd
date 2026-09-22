@@ -2,7 +2,7 @@
 % Please edit documentation in R/inspect.R
 \name{clipboard_read_text}
 \alias{clipboard_read_text}
-\title{Read Dat from Clipboard}
+\title{Read Data from Clipboard}
 \usage{
 clipboard_read_text(format_name)
 }
@@ -10,5 +10,5 @@ clipboard_read_text(format_name)
 \item{format_name}{the desired clipboard format. E.g., \code{"Rich Text Format"}}
 }
 \description{
-Read Dat from Clipboard
+Read Data from Clipboard
 }

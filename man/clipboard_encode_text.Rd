@@ -6,6 +6,9 @@
 \usage{
 clipboard_encode_text(data, format_name)
 }
+\arguments{
+\item{format_name}{Clipboard image format to be encoded.}
+}
 \value{
 raw data
 }

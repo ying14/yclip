@@ -16,6 +16,8 @@ Imports:
     Rcpp,
     rlang,
     magick,
+    htmltools,
+    knitr,
     cli
 Suggests:
     RDCOMClient

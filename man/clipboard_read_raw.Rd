@@ -4,10 +4,10 @@
 \alias{clipboard_read_raw}
 \title{Read Raw Data from Clipboard}
 \usage{
-clipboard_read_raw(format_name)
+clipboard_read_raw(format)
 }
 \arguments{
-\item{format_name}{the desired clipboard format. E.g., \code{"Rich Text Format"}}
+\item{format_name}{the desired clipboard format. E.g., \code{"Rich Text Format"} or the ID number}
 }
 \description{
 Read Raw Data from Clipboard

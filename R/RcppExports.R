@@ -9,8 +9,12 @@ clipboard_inspect_windows <- function() {
     .Call(`_yclip_clipboard_inspect_windows`)
 }
 
-clipboard_read_raw_windows <- function(format_name) {
-    .Call(`_yclip_clipboard_read_raw_windows`, format_name)
+clipboard_isolate_windows <- function(formats) {
+    invisible(.Call(`_yclip_clipboard_isolate_windows`, formats))
+}
+
+clipboard_read_raw_windows <- function(format_input) {
+    .Call(`_yclip_clipboard_read_raw_windows`, format_input)
 }
 
 clipboard_write_formats_windows <- function(data) {

@@ -1,5 +1,8 @@
 
 
+# Overall -----------------------------------------------------------------
+
+
 
 
 
@@ -20,21 +23,35 @@ clipboard_inspect <- function() {
 
 #' Read Raw Data from Clipboard
 #'
-#' @param format_name the desired clipboard format. E.g., `"Rich Text Format"`
+#' @param format_name the desired clipboard format. E.g., `"Rich Text Format"` or the ID number
 #'
 #' @return
 #' @export
 #'
 #' @examples
-clipboard_read_raw <- function(format_name) {
+clipboard_read_raw <- function(format) {
   if (.Platform$OS.type != "windows") {
-    stop("clipboard_read_raw() is currently only implemented on Windows.")
+    cli::cli_abort("clipboard_read_raw() is currently only implemented on Windows.")
   }
-  clipboard_read_raw_windows(format_name)
+  if (is.character(format)) {
+    if (length(format) != 1L || is.na(format)) {
+      cli::cli_abort("`format` must be a single non-missing character string or integer clipboard format ID.")
+    }
+  } else if (is.numeric(format)) {
+    if (length(format) != 1L || is.na(format) || format != as.integer(format) || format < 1) {
+      cli::cli_abort("`format` must be a single positive integer clipboard format ID.")
+    }
+    format <- as.integer(format)
+  } else {
+    cli::cli_abort("`format` must be a character string or integer clipboard format ID.")
+  }
+  clipboard_read_raw_windows(format)
 }
 
 
-#' Read Dat from Clipboard
+
+
+#' Read Data from Clipboard
 #'
 #' @param format_name the desired clipboard format. E.g., `"Rich Text Format"`
 #'
@@ -44,40 +61,18 @@ clipboard_read_raw <- function(format_name) {
 #' @examples
 clipboard_read_text <- function(format_name) {
   if (.Platform$OS.type != "windows") {
-    stop("clipboard_read_text() is currently only implemented on Windows.")
+    cli::cli_abort("clipboard_read_text() is currently only implemented on Windows.")
   }
   if (format_name == "CF_UNICODETEXT") {
     return(clipboard_read_unicode_text_windows())
   }
+  if (format_name == "HTML Format") {
+    return(clipboard_decode_html(clipboard_read_raw(format_name)))
+  }
+  # other formats including RTF
   x <- clipboard_read_raw(format_name)
   rawToChar(x)
 }
-
-
-
-#' Read DIB Image Data from Clipboard
-#'
-#' @return A raw vector containing Windows DIB data.
-#' @export
-clipboard_read_dib <- function() {
-  if (.Platform$OS.type != "windows") {
-    stop("clipboard_read_dib() is currently only implemented on Windows.")
-  }
-  clipboard_read_dib_windows()
-}
-
-
-#' Inspect DIB Image on Clipboard
-#'
-#' @return A list containing DIB image metadata.
-#' @export
-clipboard_inspect_dib <- function() {
-  if (.Platform$OS.type != "windows") {
-    stop("clipboard_inspect_dib() is currently only implemented on Windows.")
-  }
-  clipboard_inspect_dib_windows()
-}
-
 
 
 
@@ -106,7 +101,6 @@ clipboard_write_formats <- function(...) {
 }
 
 
-
 #' Convert data to raw
 #'
 #' Internal function that converts data to raw.
@@ -116,7 +110,7 @@ clipboard_write_formats <- function(...) {
 #' For `CF_TEXT` and `CF_UNICODETEXT`, we need to add bytes at the end,
 #' And for `CF_UNICODETEXT` we need UTF-16LE.
 #' @param data
-#' @param format_name
+#' @param format_name Clipboard image format to be encoded.
 #' @return raw data
 clipboard_encode_text <- function(data, format_name) {
   if (is.raw(data)) {
@@ -140,25 +134,289 @@ clipboard_encode_text <- function(data, format_name) {
       }
       c(bytes,as.raw(c(0, 0)))
     },
+    "HTML Format" = clipboard_encode_html(data),
+    # probably RTF
     charToRaw(data)
   )
 }
 
+
+#' Prepare Data for Clipboard Copy
+#'
+#' Converts data and prepares it for the clipboard.
+#' @param data data to be prepared
+#' @param format_name Clipboard image format to be prepared.
+#' @return Converted data, as raw vector.
+#'
+#' @examples
+clipboard_encode_data <- function(data, format_name) {
+  if (is.raw(data)) {
+    return(data)
+  }
+  if (inherits(data, "flextable")) {
+    return(clipboard_encode_flextable(data, format_name))
+  }
+  if (inherits(data, "magick-image")) {
+    return(clipboard_encode_image(data, format_name))
+  }
+  if (is.character(data)) {
+    return(clipboard_encode_text(data, format_name))
+  }
+  cli::cli_abort(
+    "Data for clipboard format {.val {format_name}} must be a raw vector, character string, flextable, or {.cls magick-image}."
+  )
+}
+
+
+
+#' Isolate Clipboard Elements
+#'
+#' @param ... Formats to be isolated. Can be ID (integer) or name (character).
+#' These are listed with [clipboard_inspect()]
+#' @export
+clipboard_isolate <- function(...) {
+  if (.Platform$OS.type != "windows") {
+    cli::cli_abort("clipboard_isolate() is currently only implemented on Windows.")
+  }
+  formats <- list(...)
+  if (length(formats) == 0L) {
+    cli::cli_abort("At least one clipboard format must be specified.")
+  }
+  formats <- purrr::map(
+    formats,
+    function(format) {
+      if (is.character(format)) {
+        if (length(format) != 1L || is.na(format)) {
+          cli::cli_abort(
+            "Each clipboard format must be a single non-missing character string or positive integer ID."
+          )
+        }
+        return(format)
+      }
+      if (is.numeric(format)) {
+        if (length(format) != 1L || is.na(format) ||
+            format != as.integer(format) || format < 1) {
+          cli::cli_abort(
+            "Each clipboard format must be a single non-missing character string or positive integer ID."
+          )
+        }
+        return(as.integer(format))
+      }
+      cli::cli_abort("Each clipboard format must be a character string or positive integer ID.")
+    }
+  )
+  clipboard_isolate_windows(formats)
+  cli::cli_alert_info("Isolated format{?s} in clipboard: {.pkg {formats}}")
+  invisible(NULL)
+}
+browseURL()
+
+# HTML --------------------------------------------------------------------
+
+
+#' Decode Windows HTML Clipboard data
+#'
+#' Windows stores HTML on the clipboard using the `HTML Format` clipboard
+#' format. The stored data consists of an ASCII header containing byte
+#' offsets such as `StartFragment` and `EndFragment`, followed by the HTML
+#' data itself.
+#'
+#' This function extracts the HTML fragment identified by those offsets and
+#' returns it as a character string. It therefore converts the raw Windows
+#' clipboard representation into the HTML content that can be used directly
+#' by R or an HTML renderer.
+#'
+#' In contrast, [clipboard_read_raw()] returns the complete `HTML Format`
+#' representation, including the Windows clipboard header. This function is
+#' used internally by [clipboard_read_text()] when `format_name` is
+#' `"HTML Format"`.
+#'
+#' @param x A raw vector containing the complete Windows `HTML Format`
+#'   clipboard representation.
+#'
+#' @return A character string containing the HTML fragment between the
+#'   `StartFragment` and `EndFragment` byte offsets.
+#'
+#' @keywords internal
+clipboard_decode_html <- function(x) {
+  if (!is.raw(x)) {
+    cli::cli_abort("HTML clipboard data must be a raw vector.")
+  }
+  header <- rawToChar(x[seq_len(min(length(x), 4096L))])
+  start_fragment <- stringr::str_match(
+    header,
+    "(?m)^StartFragment:(\\d+)\\r?$"
+  )[, 2]
+  end_fragment <- stringr::str_match(
+    header,
+    "(?m)^EndFragment:(\\d+)\\r?$"
+  )[, 2]
+  if (is.na(start_fragment) || is.na(end_fragment)) {
+    cli::cli_abort(
+      "HTML clipboard data does not contain valid StartFragment and EndFragment offsets."
+    )
+  }
+  start_fragment <- as.integer(start_fragment)
+  end_fragment <- as.integer(end_fragment)
+  if (start_fragment < 0 || end_fragment <= start_fragment) {
+    cli::cli_abort(
+      "HTML clipboard data contains invalid fragment offsets."
+    )
+  }
+  if (end_fragment > length(x)) {
+    cli::cli_abort(
+      "HTML clipboard data contains fragment offsets beyond the end of the data."
+    )
+  }
+  rawToChar(x[(start_fragment + 1L):end_fragment])
+}
+
+
+
+clipboard_encode_html <- function(html) {
+  if (!is.character(html) || length(html) != 1L || is.na(html)) {
+    cli::cli_abort("HTML must be a single non-NA character string.")
+  }
+  html <- enc2utf8(html)
+  prefix <- paste0(
+    "<html>\r\n",
+    "<body>\r\n",
+    "<!--StartFragment-->\r\n"
+  )
+  suffix <- paste0(
+    "\r\n<!--EndFragment-->\r\n",
+    "</body>\r\n",
+    "</html>\r\n"
+  )
+  header_template <- paste0(
+    "Version:0.9\r\n",
+    "StartHTML:%010d\r\n",
+    "EndHTML:%010d\r\n",
+    "StartFragment:%010d\r\n",
+    "EndFragment:%010d\r\n"
+  )
+  header <- sprintf(header_template, 0L, 0L, 0L, 0L)
+  header_bytes <- charToRaw(header)
+  prefix_bytes <- charToRaw(prefix)
+  html_bytes <- charToRaw(html)
+  suffix_bytes <- charToRaw(suffix)
+  start_html <- length(header_bytes)
+  start_fragment <- start_html + length(prefix_bytes)
+  end_fragment <- start_fragment + length(html_bytes)
+  end_html <- end_fragment + length(suffix_bytes)
+  header <- sprintf(
+    header_template,
+    start_html,
+    end_html,
+    start_fragment,
+    end_fragment
+  )
+  c(
+    charToRaw(header),
+    prefix_bytes,
+    html_bytes,
+    suffix_bytes
+  )
+}
+
+
+# Flextable ---------------------------------------------------------------
+
+
+
+
+#' Fix flextable RTF for clipboard pasting into Epic
+#'
+#' flextable::save_as_rtf() produces valid RTF, but its cell paragraphs do
+#' not explicitly contain `\\pard\\intbl`. Epic appears to require these
+#' paragraph/table markers when interpreting RTF directly from the clipboard.
+#' WordPad adds them when the RTF is pasted and copied again, which explains
+#' why the same RTF works after passing through WordPad.
+#'
+#' This inserts `\\pard\\intbl` immediately after the final `\\cellx` in
+#' each row, identified by a `\\cellx` control word followed immediately by
+#' `\\sl`. The pattern is intentionally specific to the structure produced
+#' by flextable rather than modifying arbitrary RTF.
+#'
+#' @param x A single character string containing RTF generated by flextable.
+#'
+#' @return The modified RTF string.
+#'
+#' @noRd
+clipboard_fix_flextable_rtf <- function(x) {
+  if (!is.character(x) || length(x) != 1L || is.na(x)) {
+    cli::cli_abort("Flextable RTF must be a single non-missing character string.")
+  }
+  stringr::str_replace_all(
+    x,
+    "(\\\\cellx[0-9]+)(?=\\\\sl)",
+    "\\1\\\\pard\\\\intbl"
+  )
+}
+
+
+
+#' Encode a flextable as RTF for the Windows clipboard
+#'
+#' flextable::save_as_rtf() produces RTF that works well in Word and WordPad,
+#' but Epic does not correctly interpret the table structure unless
+#' `\\pard\\intbl` is present at the beginning of each cell paragraph.
+#' `clipboard_fix_flextable_rtf()` adds these control words before the RTF
+#' is placed on the clipboard.
+#'
+#' @param data A flextable object.
+#'
+#' @return A raw vector containing the RTF clipboard data.
+#'
+#' @noRd
+clipboard_encode_flextable_rtf <- function(data) {
+  con <- textConnection("rtf", "w", local = TRUE)
+  flextable::save_as_rtf(
+    data,
+    path = con,
+    pr_section = officer::prop_section()
+  )
+  close(con)
+  rtf <- paste0(rtf, collapse = "\n")
+  rtf <- clipboard_fix_flextable_rtf(rtf)
+  charToRaw(rtf)
+}
+
+
+
+
+
+clipboard_encode_flextable <- function(data, format_name) {
+  if (format_name=="Rich Text Format") {
+    con <- textConnection("rtf", "w", local = TRUE)
+    flextable::save_as_rtf(
+      data,
+      path = con,
+      pr_section = officer::prop_section()
+    )
+    close(con)
+    rtf <- paste0(rtf, collapse = "\n")
+    rtf <- clipboard_fix_flextable_rtf(rtf)
+    return(charToRaw(rtf))
+  }
+  if (format_name=="HTML Format") {
+    html <- officer::to_html(ft_tab)
+    return(clipboard_encode_html(html))
+  }
+  cli::cli_abort("Flextable objects cannot currently be encoded as {.val {format_name}}.")
+}
+
+
+
+# Image ------------------------------------------------------------------
+
+
 clipboard_encode_image <- function(data, format_name) {
   switch(
     format_name,
-    "PNG" = magick::image_write(
-      data,
-      format = "png"
-    ),
-    "JFIF" = magick::image_write(
-      data,
-      format = "jpeg"
-    ),
-    "GIF" = magick::image_write(
-      data,
-      format = "gif"
-    ),
+    "PNG" = magick::image_write(data,format = "png"),
+    "JFIF" = magick::image_write(data,format = "jpeg"),
+    "GIF" = magick::image_write(data,format = "gif"),
     "CF_DIB" = magick_to_cf_dib(data),
     "CF_DIBV5" = magick_to_cf_dibv5(data),
     cli::cli_abort("Clipboard format {.val {format_name}} is not a supported image format.")
@@ -166,20 +424,31 @@ clipboard_encode_image <- function(data, format_name) {
 }
 
 
-clipboard_encode_data <- function(data, format_name) {
-  if (is.raw(data)) {
-    return(data)
+#' Read DIB Image Data from Clipboard
+#'
+#' @return A raw vector containing Windows DIB data.
+#' @export
+clipboard_read_dib <- function() {
+  if (.Platform$OS.type != "windows") {
+    stop("clipboard_read_dib() is currently only implemented on Windows.")
   }
-  if (is.character(data)) {
-    return(clipboard_encode_text(data, format_name))
-  }
-  if (inherits(data, "magick-image")) {
-    return(clipboard_encode_image(data, format_name))
-  }
-  cli::cli_abort(
-    "Data for clipboard format {.val {format_name}} must be a raw vector, character string, or {.cls magick-image}."
-  )
+  clipboard_read_dib_windows()
 }
+
+
+#' Inspect DIB Image on Clipboard
+#'
+#' @return A list containing DIB image metadata.
+#' @export
+clipboard_inspect_dib <- function() {
+  if (.Platform$OS.type != "windows") {
+    stop("clipboard_inspect_dib() is currently only implemented on Windows.")
+  }
+  clipboard_inspect_dib_windows()
+}
+
+
+
 
 #' Converts DIB raw to BMP magick object
 #'
@@ -537,6 +806,13 @@ clipboard_decode_image <- function(format_name) {
   }
   magick::image_read(data)
 }
+
+
+
+
+
+# Miscellaneous -----------------------------------------------------------
+
 
 
 
