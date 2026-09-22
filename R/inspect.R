@@ -209,7 +209,7 @@ clipboard_isolate <- function(...) {
   cli::cli_alert_info("Isolated format{?s} in clipboard: {.pkg {formats}}")
   invisible(NULL)
 }
-browseURL()
+
 
 # HTML --------------------------------------------------------------------
 

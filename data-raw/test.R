@@ -210,7 +210,7 @@ img3
 
 
 # Requires RDCOMClient
-yingtools2::shell.exec("epic_test.rtf")
+yingtools2::shell.exec("dev/epic_test.rtf")
 # copy all
 clipboard_inspect()
 rtf <- clipboard_read_text("Rich Text Format")

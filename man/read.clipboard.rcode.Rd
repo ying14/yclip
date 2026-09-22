@@ -4,7 +4,7 @@
 \alias{read.clipboard.rcode}
 \title{Convert R Code on Clipboard to Rich Text With Syntax Highlighting}
 \usage{
-read.clipboard.rcode()
+read.clipboard.rcode(code = NULL)
 }
 \description{
 Convert R Code on Clipboard to Rich Text With Syntax Highlighting
