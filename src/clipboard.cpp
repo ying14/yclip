@@ -374,10 +374,10 @@ Rcpp::RawVector clipboard_read_raw_windows(SEXP format_input) {
     );
   }
 
-  Rcpp::Rcout << "Format ID: " << format << "\n";
-  Rcpp::Rcout << "Handle: " << hData << "\n";
+  // Rcpp::Rcout << "Format ID: " << format << "\n";
+  // Rcpp::Rcout << "Handle: " << hData << "\n";
   SIZE_T size = GlobalSize(hData);
-  Rcpp::Rcout << "GlobalSize: " << size << "\n";
+  // Rcpp::Rcout << "GlobalSize: " << size << "\n";
 
   if (size == 0) {
     CloseClipboard();

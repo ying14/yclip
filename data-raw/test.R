@@ -111,7 +111,6 @@ clipboard_write_formats(
 # ggplot2 -----------------------------------------------------------------
 
 
-
 pdf2 <- function(filename,
                  width = 7,
                  height = 7,
@@ -398,40 +397,6 @@ clipboard_write_formats("Rich Text Format" = ft_tab)
 
 
 
-# R coding: code blocks through pandoc ---------------------------------------------------
-
-
-code <- "# Load data and calculate summary statistics\nlibrary(dplyr)\ndata <- data.frame(\n  name = c(\"Alice\", \"Bob\", \"Carol\", \"David\"),\n  score = c(91, 84, 97, NA)\n)\nresult <- data %>%\n  filter(score >= 85) %>%\n  summarise(mean_score = mean(score))\nprint(result)"
-
-html <- syntax_highlighting(code, language = "r")
-clipboard_write_formats("HTML Format" = html)
-html %>% htmltools::HTML() %>% htmltools::browsable()
-
-# OR,
-clipboard_write_formats("CF_UNICODETEXT"=code)
-read.clipboard.rcode()
-
-# huge example
-examples <- list(r = "# Load data and calculate summary statistics\nlibrary(dplyr)\ndata <- data.frame(\n  name = c(\"Alice\", \"Bob\", \"Carol\", \"David\"),\n  score = c(91, 84, 97, NA)\n)\nresult <- data %>%\n  filter(score >= 85) %>%\n  summarise(mean_score = mean(score))\nprint(result)",
-                 python = "# Load data and calculate summary statistics\nimport pandas as pd\ndata = pd.DataFrame({\n    \"name\": [\"Alice\", \"Bob\", \"Carol\", \"David\"],\n    \"score\": [91, 84, 97, 76]\n})\nresult = data[data[\"score\"] >= 85]\nmean_score = result[\"score\"].mean()\nprint(f\"Mean score: {mean_score:.1f}\")",
-                 javascript = "// Filter users and calculate their average age\nconst users = [\n  { name: \"Alice\", age: 32, active: true },\n  { name: \"Bob\", age: 41, active: false },\n  { name: \"Carol\", age: 28, active: true }\n];\nconst active = users.filter(user => user.active);\nconst meanAge = active.reduce((sum, user) => sum + user.age, 0) / active.length;\nconsole.log(`Mean age: ${meanAge.toFixed(1)}`);",
-                 typescript = "interface User {\n  name: string;\n  age: number;\n  active: boolean;\n}\nconst users: User[] = [\n  { name: \"Alice\", age: 32, active: true },\n  { name: \"Bob\", age: 41, active: false }\n];\nconst activeUsers = users.filter(user => user.active);\nconsole.log(activeUsers.length);",
-                 sql = "-- Find high-scoring users and calculate their average\nSELECT\n    department,\n    COUNT(*) AS n_users,\n    AVG(score) AS mean_score\nFROM users\nWHERE score >= 85\nGROUP BY department\nHAVING COUNT(*) > 2\nORDER BY mean_score DESC;",
-                 bash = "# Find recently modified R files\nfor file in *.R; do\n    if [ -f \"$file\" ]; then\n        echo \"Processing $file\"\n        wc -l \"$file\"\n    fi\ndone\necho \"Finished processing files\"\nmkdir -p results\ncp *.csv results/",
-                 json = "{\n  \"experiment\": {\n    \"name\": \"microbiome study\",\n    \"version\": 2,\n    \"active\": true,\n    \"samples\": [\"A01\", \"A02\", \"B01\"],\n    \"metadata\": {\n      \"organism\": \"human\",\n      \"temperature\": 37.5\n    }\n  }\n}",
-                 cpp = "#include <iostream>\n#include <vector>\n#include <numeric>\n\nint main() {\n    std::vector<int> values = {1, 2, 3, 4, 5};\n    int total = std::accumulate(values.begin(), values.end(), 0);\n    std::cout << \"Total: \" << total << std::endl;\n    return 0;\n}",
-                 rust = "fn main() {\n    let values = vec![1, 2, 3, 4, 5];\n    let total: i32 = values.iter().sum();\n    let doubled: Vec<i32> = values\n        .iter()\n        .map(|x| x * 2)\n        .collect();\n    println!(\"Total: {}\", total);\n    println!(\"Values: {:?}\", doubled);\n}",
-                 java = "public class Example {\n    public static void main(String[] args) {\n        int[] values = {1, 2, 3, 4, 5};\n        int total = 0;\n        for (int value : values) {\n            total += value;\n        }\n        System.out.println(\"Total: \" + total);\n    }\n}")
-
-html_examples <- purrr::imap(examples, ~{
-  html <- syntax_highlighting(.x, language = .y, background = "#eeeeee")
-  paste0("<h2>",.y,"</h2>",html)
-}) %>% paste(collapse="\n")
-
-html_examples %>% htmltools::HTML() %>% htmltools::browsable()
-clipboard_write_formats("HTML Format" = html_examples)
-
-
 # R coding: console output  ----------------------------------------------------------------
 
 library(tidyverse)
@@ -483,8 +448,52 @@ system.time({
 
 
 #copy some output text
+library(tidyverse)
+library(yclip)
+warning("this is warning")
+cli::ansi_palette_show()
+glimpse(starwars[,1:5])
+#copy from terminal
+
 html <- read.clipboard.rterminal()
 html %>% htmltools::HTML() %>% htmltools::browsable()
+
+# R coding: code blocks through pandoc ---------------------------------------------------
+
+
+code <- "# Load data and calculate summary statistics\nlibrary(dplyr)\ndata <- data.frame(\n  name = c(\"Alice\", \"Bob\", \"Carol\", \"David\"),\n  score = c(91, 84, 97, NA)\n)\nresult <- data %>%\n  filter(score >= 85) %>%\n  summarise(mean_score = mean(score))\nprint(result)"
+
+html <- syntax_highlighting(code, language = "r")
+clipboard_write_formats("HTML Format" = html)
+html %>% htmltools::HTML() %>% htmltools::browsable()
+
+# OR,
+clipboard_write_formats("CF_UNICODETEXT"=code)
+read.clipboard.rcode()
+
+# huge example
+examples <- list(r = "# Load data and calculate summary statistics\nlibrary(dplyr)\ndata <- data.frame(\n  name = c(\"Alice\", \"Bob\", \"Carol\", \"David\"),\n  score = c(91, 84, 97, NA)\n)\nresult <- data %>%\n  filter(score >= 85) %>%\n  summarise(mean_score = mean(score))\nprint(result)",
+                 python = "# Load data and calculate summary statistics\nimport pandas as pd\ndata = pd.DataFrame({\n    \"name\": [\"Alice\", \"Bob\", \"Carol\", \"David\"],\n    \"score\": [91, 84, 97, 76]\n})\nresult = data[data[\"score\"] >= 85]\nmean_score = result[\"score\"].mean()\nprint(f\"Mean score: {mean_score:.1f}\")",
+                 javascript = "// Filter users and calculate their average age\nconst users = [\n  { name: \"Alice\", age: 32, active: true },\n  { name: \"Bob\", age: 41, active: false },\n  { name: \"Carol\", age: 28, active: true }\n];\nconst active = users.filter(user => user.active);\nconst meanAge = active.reduce((sum, user) => sum + user.age, 0) / active.length;\nconsole.log(`Mean age: ${meanAge.toFixed(1)}`);",
+                 typescript = "interface User {\n  name: string;\n  age: number;\n  active: boolean;\n}\nconst users: User[] = [\n  { name: \"Alice\", age: 32, active: true },\n  { name: \"Bob\", age: 41, active: false }\n];\nconst activeUsers = users.filter(user => user.active);\nconsole.log(activeUsers.length);",
+                 sql = "-- Find high-scoring users and calculate their average\nSELECT\n    department,\n    COUNT(*) AS n_users,\n    AVG(score) AS mean_score\nFROM users\nWHERE score >= 85\nGROUP BY department\nHAVING COUNT(*) > 2\nORDER BY mean_score DESC;",
+                 bash = "# Find recently modified R files\nfor file in *.R; do\n    if [ -f \"$file\" ]; then\n        echo \"Processing $file\"\n        wc -l \"$file\"\n    fi\ndone\necho \"Finished processing files\"\nmkdir -p results\ncp *.csv results/",
+                 json = "{\n  \"experiment\": {\n    \"name\": \"microbiome study\",\n    \"version\": 2,\n    \"active\": true,\n    \"samples\": [\"A01\", \"A02\", \"B01\"],\n    \"metadata\": {\n      \"organism\": \"human\",\n      \"temperature\": 37.5\n    }\n  }\n}",
+                 cpp = "#include <iostream>\n#include <vector>\n#include <numeric>\n\nint main() {\n    std::vector<int> values = {1, 2, 3, 4, 5};\n    int total = std::accumulate(values.begin(), values.end(), 0);\n    std::cout << \"Total: \" << total << std::endl;\n    return 0;\n}",
+                 rust = "fn main() {\n    let values = vec![1, 2, 3, 4, 5];\n    let total: i32 = values.iter().sum();\n    let doubled: Vec<i32> = values\n        .iter()\n        .map(|x| x * 2)\n        .collect();\n    println!(\"Total: {}\", total);\n    println!(\"Values: {:?}\", doubled);\n}",
+                 java = "public class Example {\n    public static void main(String[] args) {\n        int[] values = {1, 2, 3, 4, 5};\n        int total = 0;\n        for (int value : values) {\n            total += value;\n        }\n        System.out.println(\"Total: \" + total);\n    }\n}")
+
+html_examples <- purrr::imap(examples, ~{
+  html <- syntax_highlighting(.x, language = .y, background = "#eeeeee")
+  paste0("<h2>",.y,"</h2>",html)
+}) %>% paste(collapse="\n")
+
+html_examples %>% htmltools::HTML() %>% htmltools::browsable()
+clipboard_write_formats("HTML Format" = html_examples)
+
+
+names(knitr::knit_engines$get())
+
 
 
 # R coding: knitr ---------------------------------------------------------
@@ -496,18 +505,62 @@ library(ggplot2)
 library(yingtools2)
 df <- mtcars
 
+code <- 'ggplot(df, aes(x=wt, y=mpg, color=disp, size=hp)) + geom_point()
+pillar::glimpse(df)'
 
+# Load data and calculate summary statistics
+code <- 'library(dplyr)
+data <- data.frame(
+  name = c("Alice", "Bob", "Carol", "David"),
+  score = c(91, 84, 97, NA)
+)
+result <- data %>%
+  filter(score >= 85) %>%
+  summarise(mean_score = mean(score))
+result'
+code <- 'x <- 3+3
+print(x)
+head(mtcars)
+head(iris)'
 
-code <- '
+code <- 'x <- 3+    3
+print(x)
+head(df)
+head(iris)
+warning("warning")
 ggplot(df, aes(x=wt, y=mpg, color=disp, size=hp)) + geom_point()
-pillar::glimpse(df)
-'
-html <- knit_code(code)
-html %>% htmltools::HTML() %>% htmltools::browsable()
+pillar::glimpse(df)'
 
 
-# copy this part
+html <- render_code_html(code)
+html %>% view_html()
+
+
+html.noplot <- render_code_html(code,execute=FALSE,background=NULL)
+html.noplot %>% view_html()
+
+html.custom <- render_code_html(
+  code,
+  knitr_opts = list(
+    fig.width = 20,
+    fig.height = 3,
+    tidy = TRUE,
+    dpi = 150,
+    fig.cap = NA_character_
+  )
+)
+html.custom %>% view_html()
+
+
+system2(
+  find_pandoc(),
+  "--list-highlight-languages",
+  stdout = TRUE
+)
+
+
 if (FALSE) {
+  # copy this part
   ggplot(df, aes(x=wt, y=mpg, color=disp, size=hp)) + geom_point()
   pillar::glimpse(df)
   cli::ansi_palette_show()
@@ -515,11 +568,27 @@ if (FALSE) {
   cli::cli_alert_danger("oh no")
   info(mtcars)
 }
-
-ggplot(df, aes(x=wt, y=mpg, color=disp, size=hp)) + geom_point()
-pillar::glimpse(df)
-
+# and then run
 read.rcode.make.knitr.html()
+
+clipboard_read_text("HTML Format") %>% view_html()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

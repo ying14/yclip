@@ -162,9 +162,7 @@ clipboard_encode_data <- function(data, format_name) {
   if (is.character(data)) {
     return(clipboard_encode_text(data, format_name))
   }
-  cli::cli_abort(
-    "Data for clipboard format {.val {format_name}} must be a raw vector, character string, flextable, or {.cls magick-image}."
-  )
+  cli::cli_abort("Data for clipboard format {.val {format_name}} must be a raw vector, character string, flextable, or {.cls magick-image}.")
 }
 
 
@@ -243,30 +241,18 @@ clipboard_decode_html <- function(x) {
     cli::cli_abort("HTML clipboard data must be a raw vector.")
   }
   header <- rawToChar(x[seq_len(min(length(x), 4096L))])
-  start_fragment <- stringr::str_match(
-    header,
-    "(?m)^StartFragment:(\\d+)\\r?$"
-  )[, 2]
-  end_fragment <- stringr::str_match(
-    header,
-    "(?m)^EndFragment:(\\d+)\\r?$"
-  )[, 2]
+  start_fragment <- stringr::str_match(header,"(?m)^StartFragment:(\\d+)\\r?$")[, 2]
+  end_fragment <- stringr::str_match(header,"(?m)^EndFragment:(\\d+)\\r?$")[, 2]
   if (is.na(start_fragment) || is.na(end_fragment)) {
-    cli::cli_abort(
-      "HTML clipboard data does not contain valid StartFragment and EndFragment offsets."
-    )
+    cli::cli_abort("HTML clipboard data does not contain valid StartFragment and EndFragment offsets.")
   }
   start_fragment <- as.integer(start_fragment)
   end_fragment <- as.integer(end_fragment)
   if (start_fragment < 0 || end_fragment <= start_fragment) {
-    cli::cli_abort(
-      "HTML clipboard data contains invalid fragment offsets."
-    )
+    cli::cli_abort("HTML clipboard data contains invalid fragment offsets.")
   }
   if (end_fragment > length(x)) {
-    cli::cli_abort(
-      "HTML clipboard data contains fragment offsets beyond the end of the data."
-    )
+    cli::cli_abort("HTML clipboard data contains fragment offsets beyond the end of the data.")
   }
   rawToChar(x[(start_fragment + 1L):end_fragment])
 }
@@ -318,7 +304,175 @@ clipboard_encode_html <- function(html) {
     suffix_bytes
   )
 }
+#' Roughly inspect HTML or CF_HTML styling structure
+#'
+#' Provides a lightweight, approximate summary of an HTML or CF_HTML string,
+#' focused on how its styling is carried (inline styles, class attributes,
+#' `<style>` blocks, external stylesheets) and whether it looks like a
+#' clipboard fragment. Intended for inspection and debugging of clipboard
+#' content from various source applications, not for full HTML/CSS parsing.
+#'
+#' @param html A single character string containing HTML or CF_HTML, or a
+#'   raw vector containing a clipboard HTML Format payload.
+#' @return A named list summarizing document/fragment structure, CSS usage,
+#'   and a rough `portability` classification.
+#' @noRd
+html_inspect_structure <- function(html) {
+  if (is.raw(html)) {
+    html <- rawToChar(html)
+  }
+  if (!is.character(html) || length(html) != 1L || is.na(html)) {
+    cli::cli_abort("{.arg html} must be a single non-missing character string or raw vector.")
+  }
 
+  count_matches <- function(pattern, x) {
+    stringr::str_count(x, stringr::regex(pattern, dotall = TRUE, ignore_case = TRUE))
+  }
+  get_matches <- function(pattern, x) {
+    stringr::str_extract_all(x, stringr::regex(pattern, dotall = TRUE, ignore_case = TRUE))[[1]]
+  }
+
+  # CF_HTML header + fragment indicators.
+  is_cf_html <- stringr::str_detect(html, stringr::regex("(?m)^Version:\\s*[0-9.]+\\s*$")) &&
+    stringr::str_detect(html, stringr::regex("(?m)^StartHTML:\\s*[0-9]+\\s*$"))
+  has_fragment_offsets <- stringr::str_detect(html, stringr::regex("(?m)^StartFragment:\\s*[0-9]+\\s*$")) &&
+    stringr::str_detect(html, stringr::regex("(?m)^EndFragment:\\s*[0-9]+\\s*$"))
+  has_fragment_markers <- stringr::str_detect(html, stringr::regex("<!--\\s*StartFragment\\s*-->", ignore_case = TRUE)) &&
+    stringr::str_detect(html, stringr::regex("<!--\\s*EndFragment\\s*-->", ignore_case = TRUE))
+
+  has_html_tag <- stringr::str_detect(html, stringr::regex("<html\\b", ignore_case = TRUE))
+  has_head_tag <- stringr::str_detect(html, stringr::regex("<head\\b", ignore_case = TRUE))
+  has_body_tag <- stringr::str_detect(html, stringr::regex("<body\\b", ignore_case = TRUE))
+  source_url <- stringr::str_match(html, stringr::regex("(?m)^SourceURL:(.*)$"))[, 2]
+
+  # <head> content (for head-specific style counts).
+  head <- stringr::str_extract(html, stringr::regex("<head\\b[^>]*>.*?</head\\s*>", dotall = TRUE, ignore_case = TRUE))
+  head <- if (is.na(head)) "" else head
+
+  # <style> blocks, overall and within <head>.
+  strip_style_tags <- function(blocks) {
+    if (length(blocks) == 0L) return("")
+    blocks |>
+      stringr::str_c(collapse = "\n") |>
+      stringr::str_remove_all(stringr::regex("<style\\b[^>]*>", ignore_case = TRUE)) |>
+      stringr::str_remove_all(stringr::regex("</style\\s*>", ignore_case = TRUE)) |>
+      stringr::str_remove_all(stringr::regex("/\\*.*?\\*/", dotall = TRUE))
+  }
+  style_blocks_all <- get_matches("<style\\b[^>]*>.*?</style\\s*>", html)
+  style_blocks_head <- get_matches("<style\\b[^>]*>.*?</style\\s*>", head)
+  css_all <- strip_style_tags(style_blocks_all)
+  css_head <- strip_style_tags(style_blocks_head)
+
+  # Rough rule counts (counting "{" — approximate, includes @media etc.).
+  estimated_css_rules <- count_matches("\\{", css_all)
+  estimated_head_css_rules <- count_matches("\\{", css_head)
+
+  # Opening tags, then inline-style and class-bearing subsets.
+  tags <- get_matches("<[a-z][^>]*>", html)
+  styled_tags <- tags |> purrr::keep(\(t) stringr::str_detect(t, stringr::regex("\\bstyle\\s*=", ignore_case = TRUE)))
+  classed_tags <- tags |> purrr::keep(\(t) stringr::str_detect(t, stringr::regex("\\bclass\\s*=", ignore_case = TRUE)))
+
+  # Estimate number of inline declarations across all style="..." attributes.
+  inline_declaration_count <- styled_tags |>
+    purrr::map(\(t) stringr::str_match(t, stringr::regex("\\bstyle\\s*=\\s*[\"']([^\"']*)[\"']", ignore_case = TRUE))[, 2]) |>
+    purrr::compact() |>
+    purrr::map_int(\(v) {
+      v |>
+        stringr::str_split(";") |>
+        purrr::pluck(1) |>
+        stringr::str_trim() |>
+        purrr::keep(nzchar) |>
+        length()
+    }) |>
+    sum()
+
+  external_stylesheets <- count_matches(
+    "<link\\b[^>]*\\brel\\s*=\\s*[\"']?stylesheet[\"']?[^>]*>",
+    html
+  )
+
+  fragment_type <- dplyr::case_when(
+    is_cf_html && has_fragment_offsets ~ "CF_HTML payload with fragment offsets",
+    has_fragment_markers ~ "HTML with StartFragment/EndFragment markers",
+    !has_html_tag && !has_body_tag ~ "Likely HTML fragment without document wrapper",
+    TRUE ~ "Full or unmarked HTML document"
+  )
+
+  # Rough portability classification: how self-contained does the styling look?
+  portability <- dplyr::case_when(
+    length(styled_tags) > 0L && length(classed_tags) == 0L && length(style_blocks_all) == 0L ~ "likely_inline_self_contained",
+    length(style_blocks_all) > 0L ~ "style_block_dependent",
+    length(classed_tags) > 0L && length(styled_tags) >= length(classed_tags) ~ "mixed_but_mostly_inline",
+    length(classed_tags) > 0L && length(style_blocks_all) == 0L ~ "possibly_unresolved_classes",
+    length(styled_tags) == 0L && length(classed_tags) == 0L ~ "no_detected_styling",
+    TRUE ~ "unknown"
+  )
+
+  list(
+    fragment_type = fragment_type,
+    portability = portability,
+    cf_html = is_cf_html,
+    has_fragment_offsets = has_fragment_offsets,
+    has_fragment_markers = has_fragment_markers,
+    has_html_tag = has_html_tag,
+    has_head_tag = has_head_tag,
+    has_body_tag = has_body_tag,
+    source_url = source_url,
+    inline_style_elements = length(styled_tags),
+    inline_style_declarations_estimate = inline_declaration_count,
+    classed_elements = length(classed_tags),
+    style_blocks = length(style_blocks_all),
+    head_style_blocks = length(style_blocks_head),
+    head_css_characters = nchar(css_head),
+    estimated_css_rules = estimated_css_rules,
+    estimated_head_css_rules = estimated_head_css_rules,
+    external_stylesheets = external_stylesheets
+  )
+}
+
+#' Print a Compact Summary of HTML or CF_HTML Styling Structure
+#'
+#' Inspects an HTML or CF_HTML payload using [html_inspect_structure()] and
+#' prints a concise, human-readable summary of its fragment structure and
+#' styling characteristics. This is useful for quickly comparing clipboard
+#' HTML produced by browsers, Microsoft Word, Microsoft Excel, RStudio, or
+#' other applications.
+#'
+#' The summary reports whether the content appears to be a CF_HTML fragment,
+#' the rough portability classification, the number of elements with inline
+#' styles or class attributes, the number of embedded CSS `<style>` blocks,
+#' and the number of external stylesheet references.
+#'
+#' The returned object is the full result from [html_inspect_structure()], but
+#' is returned invisibly so the primary use is interactive inspection.
+#'
+#' @param html A single character string containing HTML or CF_HTML, or a raw
+#'   vector containing an `"HTML Format"` clipboard payload.
+#'
+#' @return Invisibly returns a named list produced by
+#'   [html_inspect_structure()].
+#'
+#' @examples
+#' \dontrun{
+#' html_raw <- clipboard_read_raw("HTML Format")
+#' html_inspect_summary(html_raw)
+#'
+#' html <- rawToChar(html_raw)
+#' html_inspect_summary(html)
+#' }
+#'
+#' @export
+html_inspect_summary <- function(html) {
+  x <- html_inspect_structure(html)
+  cli::cli_inform(c(
+    "{.strong {x$fragment_type}} ({.emph {x$portability}})",
+    "*" = "inline-styled elements: {x$inline_style_elements} ({x$inline_style_declarations_estimate} declarations)",
+    "*" = "class-bearing elements: {x$classed_elements}",
+    "*" = "style blocks: {x$style_blocks} (head: {x$head_style_blocks}, ~{x$estimated_css_rules} rules)",
+    "*" = "external stylesheets: {x$external_stylesheets}"
+  ))
+  invisible(x)
+}
 
 # Flextable ---------------------------------------------------------------
 
@@ -400,7 +554,7 @@ clipboard_encode_flextable <- function(data, format_name) {
     return(charToRaw(rtf))
   }
   if (format_name=="HTML Format") {
-    html <- officer::to_html(ft_tab)
+    html <- officer::to_html(data)
     return(clipboard_encode_html(html))
   }
   cli::cli_abort("Flextable objects cannot currently be encoded as {.val {format_name}}.")
